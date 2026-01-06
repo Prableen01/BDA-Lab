@@ -1,0 +1,44 @@
+.resources-wrapper {
+  padding: 80px 40px;
+}
+
+.resources-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.resources-section {
+  margin-top: 50px;
+}
+
+.resources-section h2 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.resource-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #eef1f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.resource-table th,
+.resource-table td {
+  padding: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.resource-table th {
+  text-align: left;
+  font-size: 18px;
+}
+
+.resource-table td {
+  font-size: 16px;
+}

@@ -1,0 +1,55 @@
+.projects-page {
+  width: 100%;
+  max-width: 1250px;
+  margin: 120px auto 60px auto;
+  padding: 0 30px;
+  color: #222;
+  /* font-family: "Montserrat", Arial, sans-serif; */
+}
+
+/* MAIN TITLE */
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+section hr {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.25);
+  margin-bottom: 30px;
+}
+
+/* PROJECT BLOCK */
+.project-item {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.project-item b {
+  font-size: 20px;
+}
+
+/* For navbar smooth jump */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Responsive */
+@media(max-width: 900px){
+  .page-title { font-size: 38px; }
+  .section-title { font-size: 26px; }
+  .project-item { font-size: 14px; }
+}

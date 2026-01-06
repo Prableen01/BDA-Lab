@@ -1,0 +1,40 @@
+.datasets-wrapper {
+  padding: 80px 40px;
+}
+
+.datasets-title {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.datasets-box {
+  margin: 40px auto;
+  background: #edf1f5;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 1100px;
+}
+
+.datasets-heading {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.dataset-row {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  margin-top: 35px;
+}
+
+.dataset-name {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.dataset-desc {
+  font-size: 17px;
+  line-height: 1.6;
+}

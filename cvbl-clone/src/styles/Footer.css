@@ -1,0 +1,27 @@
+.footer-banner {
+  background: #242a33 url("https://www.freeiconspng.com/images/world-map-png") no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.footer-banner h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.footer-banner p {
+  margin: 5px 0;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #555;
+  background: white;
+}
