@@ -1,62 +1,76 @@
+/* MAIN PAGE */
 .faculty-container {
   text-align: center;
-  padding: 80px 40px;
-  background: #f5f6f9;
+  padding: 120px 40px 80px;
+
+  background: linear-gradient(135deg, #050b18, #0b1733);
 }
 
+/* HEADING */
 .faculty-container h1 {
   font-size: 36px;
   font-weight: 800;
   letter-spacing: 2px;
+  color: #cfe9ff;
   margin-bottom: 50px;
 }
 
+/* GRID */
 .faculty-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 60px;
+  gap: 50px;
   justify-items: center;
 }
 
+/* CARD */
 .faculty-card {
-  background: white;
-  padding: 25px;
-  border-radius: 20px;
   width: 280px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: transform .3s ease, box-shadow .3s ease;
+  padding: 22px;
+
+  background: #0f1b3d;
+  border-radius: 18px;
+
+  border: 1px solid rgba(130, 200, 255, 0.3);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+
+  transition: transform .3s ease, box-shadow .3s ease, border .3s ease;
 }
 
 .faculty-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+  border: 1px solid rgba(180, 230, 255, 0.6);
 }
 
+/* IMAGE */
 .faculty-img {
   width: 160px;
   height: 160px;
   object-fit: cover;
+
   border-radius: 50%;
-  border: 6px solid white;
-  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  border: 4px solid #1e2f55;
+
   margin-bottom: 15px;
 }
 
+/* TEXT */
 .faculty-name {
-  color: #0036d6;
+  color: #e2f0ff;
   font-size: 18px;
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 .faculty-role {
-  color: gray;
+  color: #7fb9ff;
   margin-bottom: 10px;
 }
 
+/* CONTACT */
 .faculty-email,
 .faculty-phone {
-  color: #555;
+  color: #cdd9ff;
   font-size: 14px;
   margin: 4px 0;
 }
-

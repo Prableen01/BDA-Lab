@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { HashLink as Link } from "react-router-hash-link"; // ✅ Use HashLink for smooth scrolling
+import { HashLink as Link } from "react-router-hash-link";
 import "../styles/Navbar.css";
 
 function Navbar() {
@@ -17,24 +17,23 @@ function Navbar() {
         setActiveMenu(null);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Close dropdown when a link is clicked
   const handleLinkClick = () => setActiveMenu(null);
 
   return (
     <nav className="navbar" ref={navRef}>
       {/* LEFT LOGO */}
       <div className="nav-left">
-        <span className="logo">CVBL</span>
+        <span className="logo">BDAL</span>
       </div>
 
-      {/* CENTER NAV LINKS */}
+      {/* CENTER NAV */}
       <div className="nav-center">
         <ul className="nav-links">
+
           <li>
             <Link smooth to="/" onClick={handleLinkClick}>Home</Link>
           </li>
@@ -45,10 +44,10 @@ function Navbar() {
             {activeMenu === "about" && (
               <div className="dropdown-menu">
                 <Link smooth to="/#mission" onClick={handleLinkClick}>
-                  Mission & Vision
+                  Vision & Mission
                 </Link>
                 <Link smooth to="/#objectives" onClick={handleLinkClick}>
-                  Core Objectives
+                  Lab Objectives
                 </Link>
                 <Link smooth to="/#funding" onClick={handleLinkClick}>
                   Funding & Collaboration
@@ -88,9 +87,9 @@ function Navbar() {
             <span onClick={() => toggleMenu("courses")}>Courses ▼</span>
             {activeMenu === "courses" && (
               <div className="dropdown-menu">
-                <Link to="/ug" onClick={handleLinkClick}>Deep Learning</Link>
-                <Link to="/pg" onClick={handleLinkClick}>Visual Recognition</Link>
-                <Link to="/workshops" onClick={handleLinkClick}>Image and Video Processing</Link>
+                <Link to="/ug" onClick={handleLinkClick}>Big Data Analytics</Link>
+                <Link to="/pg" onClick={handleLinkClick}>AI & Machine Learning</Link>
+                <Link to="/workshops" onClick={handleLinkClick}>HPC & Cloud Computing</Link>
               </div>
             )}
           </li>
@@ -100,25 +99,24 @@ function Navbar() {
             <span onClick={() => toggleMenu("events")}>Events ▼</span>
             {activeMenu === "events" && (
               <div className="dropdown-menu">
-                <Link to="/upcoming" onClick={handleLinkClick}>Delta 2025</Link>
-                <Link to="/past" onClick={handleLinkClick}>IEEE SPS XAI 2025</Link>
-                <Link to="/past" onClick={handleLinkClick}>ADASIVA 2025</Link>
-                <Link to="/past" onClick={handleLinkClick}>CVMI 2024</Link>
+                <Link to="/upcoming" onClick={handleLinkClick}>Workshops & Seminars</Link>
+                <Link to="/past" onClick={handleLinkClick}>Past Conferences</Link>
               </div>
             )}
           </li>
 
           <li>
-            <Link to="#footer" onClick={handleLinkClick}>Contact</Link>
+            <Link smooth to="#footer" onClick={handleLinkClick}>Contact</Link>
           </li>
 
           <li>
-            <Link to="/" onClick={handleLinkClick}>Gallery</Link>
+            <Link to="/gallery" onClick={handleLinkClick}>Gallery</Link>
           </li>
+
         </ul>
       </div>
 
-      {/* RIGHT EMPTY FOR BALANCE */}
+      {/* RIGHT EMPTY */}
       <div className="nav-right"></div>
     </nav>
   );

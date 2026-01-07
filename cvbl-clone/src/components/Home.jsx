@@ -8,18 +8,20 @@ function Home() {
       {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-overlay">
-          <h1>COMPUTER VISION AND BIOMETRICS LAB</h1>
+          <h1>BIG DATA ANALYTICS LAB</h1>
+          <p className="hero-tagline">
+            Empowering Insights • Driving Intelligence • Transforming Data into Knowledge
+          </p>
 
           <div className="hero-buttons">
-  <button onClick={() => document.getElementById("mission").scrollIntoView({behavior:"smooth"})}>
-    MISSION & VISION
-  </button>
+            <button onClick={() => document.getElementById("mission").scrollIntoView({ behavior: "smooth" })}>
+              MISSION & VISION
+            </button>
 
-  <button onClick={() => document.getElementById("objectives").scrollIntoView({behavior:"smooth"})}>
-    CORE OBJECTIVES
-  </button>
-</div>
-
+            <button onClick={() => document.getElementById("objectives").scrollIntoView({ behavior: "smooth" })}>
+              CORE OBJECTIVES
+            </button>
+          </div>
         </div>
       </section>
 
@@ -28,9 +30,11 @@ function Home() {
         <div className="mission-left">
           <h2>MISSION & VISION</h2>
           <p>
-            Promote learning and system development in the field of Computer Vision
-            and Biometrics. The research community will constantly work together 
-            to exchange ideas, collaborate and bring impactful solutions to real world problems.
+            The Big Data Analytics Lab aims to advance cutting-edge research in data science,
+            large-scale analytics, distributed computing, and AI-powered decision making.
+            Our vision is to enable intelligent systems that extract meaningful insights
+            from massive datasets to solve real-world challenges in healthcare, finance,
+            smart cities, cybersecurity, and beyond.
           </p>
         </div>
 
@@ -38,107 +42,104 @@ function Home() {
           <h2>RECENT UPDATES</h2>
 
           <div className="update-item">
-            <a>DeLTA 2025 Winter Internship</a>
-            <span>Dec 01–31, 2025</span>
+            <a>Big Data Hackathon 2026</a>
+            <span>Feb 18–20, 2026</span>
           </div>
 
           <div className="update-item">
-            <a>IEEE SPS XAI 2025 Seasonal School</a>
-            <span>July 16–20, 2025</span>
+            <a>Workshop on Advanced AI & Data Engineering</a>
+            <span>Jan 12–13, 2026</span>
           </div>
 
           <div className="update-item">
-            <a>ADASIVA 2025 Summer School</a>
-            <span>July 07–12, 2025</span>
+            <a>Industry Collaboration with NVIDIA & AWS</a>
+            <span>Ongoing</span>
           </div>
 
           <div className="update-item">
-            <a>3rd IEEE CVMI 2024 Conference</a>
-            <span>Oct 19–20, 2024</span>
+            <a>International Conference on Data Intelligence</a>
+            <span>Nov 2025</span>
           </div>
         </div>
       </section>
 
       {/* RESEARCH FIELDS */}
       <section className="research-section">
-  <h2>RESEARCH FIELDS</h2>
-  <p className="research-subtext">
-    Our research spans multiple cutting-edge domains shaping the future
-    of automation, security, and intelligent systems.
-  </p>
+        <h2>RESEARCH DOMAINS</h2>
+        <p className="research-subtext">
+          We explore next-generation intelligent data technologies powering the future.
+        </p>
 
-  <div className="research-grid">
+        <div className="research-grid">
 
-    <div className="research-card">
-      <div className="icon-circle">🤖</div>
-      <h3>Machine Learning</h3>
-      <p>Developing intelligent systems through data-driven models.</p>
-    </div>
+          <div className="research-card">
+            <div className="icon-circle">📊</div>
+            <h3>Big Data Analytics</h3>
+            <p>High-performance data processing & predictive modeling.</p>
+          </div>
 
-    <div className="research-card">
-      <div className="icon-circle">👁️</div>
-      <h3>Computer Vision</h3>
-      <p>Understanding visual information for real-world applications.</p>
-    </div>
+          <div className="research-card">
+            <div className="icon-circle">☁️</div>
+            <h3>Cloud & Distributed Systems</h3>
+            <p>Scalable computation using Hadoop, Spark & Kubernetes.</p>
+          </div>
 
-    <div className="research-card">
-      <div className="icon-circle">🧬</div>
-      <h3>Biometrics</h3>
-      <p>Secure and reliable identity recognition technologies.</p>
-    </div>
+          <div className="research-card">
+            <div className="icon-circle">🧠</div>
+            <h3>AI & Machine Learning</h3>
+            <p>Deep learning for intelligent analytics & automation.</p>
+          </div>
 
-    <div className="research-card">
-      <div className="icon-circle">🖼️</div>
-      <h3>Image Processing</h3>
-      <p>Enhancing and interpreting digital images efficiently.</p>
-    </div>
+          <div className="research-card">
+            <div className="icon-circle">🔐</div>
+            <h3>Data Security</h3>
+            <p>Privacy-preserving analytics & secure data handling.</p>
+          </div>
 
-  </div>
-</section>
-
+        </div>
+      </section>
 
       {/* OBJECTIVES */}
-      <section id="objectives"  className="objectives-section">
+      <section id="objectives" className="objectives-section">
         <h2>CORE OBJECTIVES</h2>
 
         <div className="objective-box">
-          The Lab will provide a platform to students, faculty, and research fellows to work together and initiate teaching and research activities in the area to unveil various concepts and tools.
+          To create a collaborative environment for students, researchers,
+          and faculty to innovate using massive data-driven technologies.
         </div>
 
         <div className="objective-box">
-          The center will provide a common ground to the research community to discover challenges and possible solutions in computer vision. Teaching and learning will be the backbone of future research activities, involving all stakeholders.
+          To bridge academia and industry through real-world data projects,
+          fostering innovation and impactful research outcomes.
         </div>
 
         <div className="objective-box">
-          The proposed center will contribute to:
+          Our lab focuses on:
           <ul>
-            <li>Enhancing the quality of education provided by the Institute with emphasis on domain-specific expertise.</li>
-            <li>Grooming and nurturing young talent willing to work in the field, with ample opportunities and guidance.</li>
-            <li>Promoting research by investigating existing problems that can be solved with available tools and applications.</li>
-            <li>Identifying problems where computer vision, machine learning, and biometrics could serve as optimal solutions.</li>
+            <li>Developing scalable big data platforms</li>
+            <li>Enhancing AI-driven decision intelligence</li>
+            <li>Promoting advanced analytics research & publications</li>
+            <li>Building real-world industrial & societal data solutions</li>
           </ul>
         </div>
 
         <div className="objective-box">
-          The proposed Lab will have the capability to:
+          The Lab envisions:
           <ul>
-            <li>Establish infrastructure mostly through research funding.</li>
-            <li>Leverage campus and state collaborations for mutual benefit.</li>
-            <li>Provide seamless support between and among student service areas (advising, tutoring, counseling, etc.).</li>
-            <li>Productively involve both staff and faculty in these areas.</li>
-            <li>Expand into new and emerging technologies, education, assessment, and undergraduate research.</li>
-            <li>Collaborate with faculty, staff, students, community members, and programs engaged in related experiential, community-based teaching, learning, and scholarship.</li>
+            <li>Establishing high-performance computing infrastructure</li>
+            <li>Industry & Government collaborations</li>
+            <li>Training students with future-ready skills</li>
+            <li>Driving innovation in intelligent data ecosystems</li>
           </ul>
         </div>
-
       </section>
 
       {/* FUNDING */}
-      <section id="funding"  className="funding-section">
+      <section id="funding" className="funding-section">
         <h2>FUNDING & COLLABORATION</h2>
         <p>
-          CVBL has been involved in cutting-edge research supported by
-          government agencies and industry collaborators.
+          The Big Data Analytics Lab is supported by industry leaders, research grants,
+          and government funding agencies fostering innovation and excellence.
         </p>
       </section>
 

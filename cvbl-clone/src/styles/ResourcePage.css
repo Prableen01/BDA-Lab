@@ -1,44 +1,101 @@
+/* ===== RESOURCES PAGE WRAPPER ===== */
 .resources-wrapper {
-  padding: 80px 40px;
+  padding: 110px 40px 80px 40px;
+  max-width: 1250px;
+  margin: auto;
+
+  background: linear-gradient(140deg, #020617, #010b28 65%);
+  color: #d6eeff;
 }
 
+body{
+  width: 100vw;
+  background: linear-gradient(140deg, #020617, #010b28 60%);
+
+}
+
+/* ===== MAIN TITLE ===== */
 .resources-title {
   text-align: center;
   font-size: 36px;
   font-weight: 800;
   letter-spacing: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+
+  color: #79ffe6;
+  border-bottom: 1px solid rgba(0,255,200,0.25);
+  padding-bottom: 10px;
 }
 
+/* ===== SECTION HEADINGS ===== */
 .resources-section {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .resources-section h2 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 800;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  color: #7dfaff;
+  text-align: center;
 }
 
+/* ===== TABLE ===== */
 .resource-table {
   width: 100%;
   border-collapse: collapse;
-  background: #eef1f5;
-  border-radius: 10px;
+
+  background: rgba(6, 20, 60, 0.9);
+  border: 1px solid rgba(0,255,200,0.25);
+  border-radius: 14px;
   overflow: hidden;
+
+  box-shadow: 0 0 25px rgba(0,255,200,0.18);
 }
 
-.resource-table th,
-.resource-table td {
-  padding: 16px;
-  border-bottom: 1px solid #ccc;
-}
-
+/* Header */
 .resource-table th {
+  padding: 16px;
   text-align: left;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 800;
+
+  background: rgba(0,255,200,0.12);
+  color: #bafaff;
 }
 
+/* Rows */
 .resource-table td {
+  padding: 15px 18px;
   font-size: 16px;
+  color: #e8f6ff;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Row hover effect */
+.resource-table tr:hover {
+  background: rgba(0,255,200,0.12);
+  transition: 0.25s ease;
+}
+
+/* Remove last border */
+.resource-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Smooth scroll offset */
+section {
+  scroll-margin-top: 110px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 900px){
+  .resources-title { font-size: 30px; }
+  .resources-section h2 { font-size: 22px; }
+
+  .resource-table th,
+  .resource-table td {
+    font-size: 14px;
+    padding: 12px;
+  }
 }

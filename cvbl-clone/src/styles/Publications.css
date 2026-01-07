@@ -4,33 +4,41 @@
   max-width: 1250px;
   margin: 120px auto 60px auto;
   padding: 0 30px;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  color: #222;
+
+  background: linear-gradient(140deg, #020617, #010b28 60%);
+  color: #cfe6ff;
 }
 
 /* ==== MAIN PAGE TITLE ==== */
 .page-title {
   text-align: center;
- font-size: 36px;
+  font-size: 36px;
   font-weight: 800;
   letter-spacing: 2px;
   margin-bottom: 70px;
+
+  color: #7beaff;
+  border-bottom: 1px solid rgba(0,255,200,0.22);
+  padding-bottom: 12px;
 }
 
 /* ==== SECTION TITLES ==== */
 .section-title {
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
   margin-top: 40px;
   margin-bottom: 15px;
+
+  color: #6bf6d7;
 }
 
-/* Horizontal divider */
+/* Cyber Divider */
 section hr {
   width: 100%;
   border: none;
-  border-top: 1px solid rgba(0,0,0,0.2);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,255,200,0.35), transparent);
   margin-bottom: 30px;
 }
 
@@ -39,42 +47,55 @@ section hr {
   font-size: 18px;
   line-height: 1.7;
   margin-bottom: 22px;
-  color: #333;
+
+  background: #0b162d;
+  border: 1px solid rgba(0,255,200,0.25);
+  border-radius: 12px;
+
+  padding: 16px 18px;
+  color: #d8eeff;
+  transition: 0.3s ease;
 }
 
-/* Make numbers bold & aligned nicely */
+body{
+  width: 100vw;
+  background: linear-gradient(140deg, #020617, #010b28 60%);
+
+}
+
+/* Soft hover */
+.pub-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0,255,200,0.45);
+  background: #0f2042;
+}
+
+/* Numbers */
 .pub-item b {
   font-size: 20px;
   margin-right: 6px;
+  color: #78dfff;
 }
 
-/* Links like screenshot */
+/* Links */
 .pub-item a {
-  color: #0056ff;
-  text-decoration: none;
+  color: #7beaff;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .pub-item a:hover {
   text-decoration: underline;
 }
 
-/* ==== SMOOTH SCROLL SPACING FOR FIXED NAVBAR ==== */
+/* Smooth navbar scroll */
 section {
-  scroll-margin-top: 100px;   /* adjust if navbar height different */
+  scroll-margin-top: 110px;
 }
 
 /* ==== RESPONSIVE ==== */
 @media(max-width: 900px){
-  .page-title {
-    font-size: 38px;
-  }
-
-  .section-title {
-    font-size: 26px;
-  }
-
-  .pub-item {
-    font-size: 16px;
-  }
+  .page-title { font-size: 32px; }
+  .section-title { font-size: 24px; }
+  .pub-item { font-size: 16px; }
 }

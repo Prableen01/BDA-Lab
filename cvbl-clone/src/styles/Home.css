@@ -1,20 +1,22 @@
 .home-container {
   width: 100%;
+  background: #050B16;
+  color: #EAF1FF;
 }
 
 /* HERO */
 .hero {
   height: 100vh;
-  background: 
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("../assets/campus2.jpg") center/cover no-repeat;
   margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.8)),
+    url("../assets/bigdata.jpg") center/cover no-repeat;
 }
-
 
 .hero-overlay {
   height: 100%;
-  background: rgba(80, 90, 120, 0.45);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,10 +25,16 @@
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  color: #dbe4ff;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  letter-spacing: 2px;
+  font-size: 3.8rem;
+  color: #7BC9FF;
+  text-shadow: 0 0 25px rgba(0,255,255,0.6);
+  letter-spacing: 3px;
+}
+
+.hero-tagline {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #bcd7ff;
 }
 
 .hero-buttons {
@@ -36,198 +44,180 @@
 }
 
 .hero-buttons button {
-  padding: 15px 35px;
-  border-radius: 6px;
-  background: rgba(80, 160, 120, 0.85);
-  color: #fff;
+  padding: 14px 40px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #00C6FF, #0072FF);
   border: none;
+  color: white;
   font-size: 14px;
-  letter-spacing: 1px;
   cursor: pointer;
+  transition: .3s;
 }
 
 .hero-buttons button:hover {
-  background: rgba(60, 140, 100, 1);
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #00FFA3, #00C6FF);
 }
 
-
-/* MISSION + VISION */
+/* MISSION SECTION */
 .mission-section {
   display: flex;
-  padding: 60px 80px;
-  gap: 50px;
-  align-items: flex-start;
+  padding: 70px 80px;
+  gap: 40px;
 }
 
-.mission-left {
-  flex: 1.2;
-  padding: 30px;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.mission-left h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-}
-
-.mission-left p {
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-
-/* RECENT UPDATES RIGHT PANEL */
+.mission-left,
 .mission-right {
   flex: 1;
-  background: #ffffff;
+  background: #0C1529;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0,255,255,0.1);
 }
 
+.mission-left h2,
 .mission-right h2 {
-  margin-bottom: 15px;
+  color: #6BE9FF;
 }
 
 .update-item {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #2c3d63;
   padding: 10px 0;
 }
 
 .update-item a {
   font-weight: bold;
-  color: #1b3a8a;
-  cursor: pointer;
+  color: #7BC9FF;
 }
 
 .update-item span {
-  display: block;
-  font-size: 13px;
-  color: gray;
-}
-
-
-/* RESEARCH */
-.research-section {
-  text-align: center;
-  padding: 70px 60px;
-}
-
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 50px;
-  margin-top: 40px;
-}
-
-.research-card {
-  text-align: center;
-}
-
-.icon-circle {
-  width: 140px;
-  height: 140px;
-  border-radius: 100%;
-  background: #ffd23f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-.research-card p {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-
-/* OBJECTIVES */
-.objectives-section {
-  padding: 70px 80px;
-  background: #f8f9ff;
-}
-
-.objective-box {
-  padding: 18px;
-  margin-bottom: 12px;
-  border-radius: 8px;
-  border: 1px solid #d5d5d5;
-  background: white;
-  font-size: 15px;
-}
-
-/* FUNDING */
-.funding-section {
-  padding: 60px 80px;
-  text-align: center;
+  color: #aaa;
 }
 
 /* RESEARCH SECTION */
 .research-section {
   text-align: center;
   padding: 80px 80px;
-  background: #ffffff;
 }
 
 .research-section h2 {
-  font-size: 32px;
-  letter-spacing: 1px;
+  color: #6BE9FF;
 }
 
 .research-subtext {
-  max-width: 750px;
-  margin: 10px auto 40px auto;
-  color: #555;
-  font-size: 16px;
+  color: #c8d9ff;
 }
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 35px;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .research-card {
-  padding: 25px 20px;
+  background: #0D1A33;
+  padding: 25px;
   border-radius: 14px;
-  background: #ffffff;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  transition: transform .3s ease, box-shadow .3s ease;
+  transition: .3s;
 }
 
 .research-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.2);
 }
 
 .icon-circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
-  background: linear-gradient(135deg, #6c8dff, #1b3a8a);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
+  width: 110px;
+  height: 110px;
   margin: auto;
-  color: white;
-  margin-bottom: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00DBDE, #0072FF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin-bottom: 10px;
 }
 
-.research-card h3 {
-  margin: 10px 0 6px;
-  font-size: 18px;
-  font-weight: 800;
+/* OBJECTIVES */
+.objectives-section {
+  padding: 80px 80px;
+  background: #081124;
 }
 
-.research-card p {
-  color: #666;
-  font-size: 14px;
+.objectives-section h2 {
+  color: #6BE9FF;
+}
+
+.objective-box {
+  background: #0D1A33;
+  border: 1px solid #1e3869;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* FUNDING */
+.funding-section {
+  padding: 70px 80px;
+}
+
+.funding-section h2 {
+  color: #6BE9FF;
+}
+
+/* TECH GRID BACKGROUND */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: relative;
+  z-index: 5;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(#00eaff22 1px, transparent 1px),
+    linear-gradient(90deg, #00eaff22 1px, transparent 1px);
+  background-size: 60px 60px;
+
+  opacity: .6;
+  transform: perspective(700px) rotateX(18deg);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: 2;
+
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(0, 255, 200, 0.18) 40%,
+    rgba(0, 255, 255, 0.7) 50%,
+    rgba(0, 255, 200, 0.18) 60%,
+    transparent 100%
+  );
+
+  animation: cyberSweep 5s linear infinite alternate;
+}
+
+
+@keyframes cyberSweep {
+  0% {
+    transform: translateX(-60%) translateY(-60%) rotate(15deg);
+  }
+
+  100% {
+    transform: translateX(60%) translateY(60%) rotate(15deg);
+  }
 }
 

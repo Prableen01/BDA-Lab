@@ -1,27 +1,42 @@
+/* TOP FOOTER BANNER */
 .footer-banner {
-  background: #242a33 url("https://www.freeiconspng.com/images/world-map-png") no-repeat center/cover;
-  color: white;
+  background: radial-gradient(circle at 20% 20%, rgba(0,255,160,0.05), transparent),
+              radial-gradient(circle at 80% 60%, rgba(0,200,255,0.05), transparent),
+              linear-gradient(120deg, #020617, #010b28);
+
+  color: #dff6ff;
   text-align: center;
   padding: 120px 20px;
+
+  border-top: 1px solid rgba(0,255,200,0.25);
 }
 
+/* Heading */
 .footer-banner h2 {
   font-size: 22px;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #4ef5c5;
+  text-shadow: 0 0 4px rgba(0,255,160,0.4);
 }
 
+/* Address text */
 .footer-banner p {
-  margin: 5px 0;
+  margin: 6px 0;
   font-size: 15px;
-  opacity: 0.9;
+  opacity: 0.85;
+  color: #c9dcff;
 }
 
-/* Bottom Copyright Bar */
+/* COPYRIGHT STRIP */
 .footer-bottom {
   text-align: center;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 13px;
-  color: #555;
-  background: white;
+
+  background: rgba(3, 8, 40, 0.85);
+  border-top: 1px solid rgba(0,255,200,0.25);
+
+  color: #b7d9ff;
+  letter-spacing: .3px;
 }
