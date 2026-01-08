@@ -72,31 +72,44 @@ function Home() {
 
         <div className="research-grid">
 
-          <div className="research-card">
-            <div className="icon-circle">📊</div>
-            <h3>Big Data Analytics</h3>
-            <p>High-performance data processing & predictive modeling.</p>
-          </div>
+  <div className="research-card">
+    <div className="icon-circle">📊</div>
+    <h3>Big Data Analytics</h3>
+    <p>
+      Large-scale data analysis, pattern discovery, and predictive insights
+      using distributed computing frameworks.
+    </p>
+  </div>
 
-          <div className="research-card">
-            <div className="icon-circle">☁️</div>
-            <h3>Cloud & Distributed Systems</h3>
-            <p>Scalable computation using Hadoop, Spark & Kubernetes.</p>
-          </div>
+  <div className="research-card">
+    <div className="icon-circle">📈</div>
+    <h3>Data Visualisation</h3>
+    <p>
+      Interactive dashboards and visual analytics for effective interpretation
+      of complex datasets.
+    </p>
+  </div>
 
-          <div className="research-card">
-            <div className="icon-circle">🧠</div>
-            <h3>AI & Machine Learning</h3>
-            <p>Deep learning for intelligent analytics & automation.</p>
-          </div>
+  <div className="research-card">
+    <div className="icon-circle">🧠</div>
+    <h3>AI & Machine Learning</h3>
+    <p>
+      Intelligent systems using machine learning and deep learning for
+      automation, prediction, and decision-making.
+    </p>
+  </div>
 
-          <div className="research-card">
-            <div className="icon-circle">🔐</div>
-            <h3>Data Security</h3>
-            <p>Privacy-preserving analytics & secure data handling.</p>
-          </div>
+  <div className="research-card">
+    <div className="icon-circle">💻</div>
+    <h3>Software Engineering</h3>
+    <p>
+      Design and development of scalable, secure, and maintainable software
+      systems.
+    </p>
+  </div>
 
-        </div>
+</div>
+
       </section>
 
       {/* OBJECTIVES */}
