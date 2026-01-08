@@ -89,7 +89,8 @@ function Navbar() {
               <div className="dropdown-menu">
                 <Link to="/ug" onClick={handleLinkClick}>Big Data Analytics</Link>
                 <Link to="/pg" onClick={handleLinkClick}>AI & Machine Learning</Link>
-                <Link to="/workshops" onClick={handleLinkClick}>HPC & Cloud Computing</Link>
+                <Link to="/workshops" onClick={handleLinkClick}>Data Visualisation</Link>
+                <Link to="/workshops" onClick={handleLinkClick}>Software Engineering</Link>
               </div>
             )}
           </li>
