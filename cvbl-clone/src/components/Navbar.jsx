@@ -62,7 +62,8 @@ function Navbar() {
             {activeMenu === "people" && (
               <div className="dropdown-menu">
                 <Link to="/faculty" onClick={handleLinkClick}>Faculty</Link>
-                <Link to="/students" onClick={handleLinkClick}>Students</Link>
+                <Link to="/students#Phd" onClick={handleLinkClick}>Students-Phd</Link>
+                <Link to="/students#M.tech" onClick={handleLinkClick}>Students-M.tech</Link>
               </div>
             )}
           </li>
@@ -74,6 +75,7 @@ function Navbar() {
               <div className="dropdown-menu">
                 <Link smooth to="/publications#journals" onClick={handleLinkClick}>Publications - Journals</Link>
                 <Link smooth to="/publications#conferences" onClick={handleLinkClick}>Publications - Conferences</Link>
+                <Link smooth to="/publications#workshops" onClick={handleLinkClick}>Workshops</Link>
                 <Link smooth to="/projects#sponsored" onClick={handleLinkClick}>Sponsored Projects</Link>
                 <Link smooth to="/projects#grants" onClick={handleLinkClick}>Grants</Link>
                 <Link smooth to="/resources" onClick={handleLinkClick}>Resources</Link>
@@ -96,7 +98,7 @@ function Navbar() {
           </li>
 
           {/* EVENTS */}
-          <li className="dropdown">
+          {/* <li className="dropdown">
             <span onClick={() => toggleMenu("events")}>Events ▼</span>
             {activeMenu === "events" && (
               <div className="dropdown-menu">
@@ -104,7 +106,7 @@ function Navbar() {
                 <Link to="/past" onClick={handleLinkClick}>Past Conferences</Link>
               </div>
             )}
-          </li>
+          </li> */}
 
           <li>
             <Link smooth to="#footer" onClick={handleLinkClick}>Contact</Link>

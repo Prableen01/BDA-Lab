@@ -1,69 +1,53 @@
 import React from "react";
 import "../styles/Faculty.css";
+import { phdStudents,mtechStudents } from "../data/Students";
 
-const facultyData = [
-  {
-    name: "Student 1 ",
-    role: "Professor",
-    email: "mssutaone@iiita.ac.in",
-    phone: "+91-532-292-2222",
-    img: "https://www.iiita.ac.in/institute/message_from_director/"
-  },
-  {
-    name: "Prof. Satish Kumar Singh",
-    role: "Professor",
-    email: "sk.singh@iiita.ac.in",
-    phone: "+91-532-292-2533",
-    img: "/images/faculty2.png"
-  },
-  {
-    name: "Dr. Shiv Ram Dubey",
-    role: "Associate Professor",
-    email: "srdubey@iiita.ac.in",
-    phone: "+91-532-292-2211",
-    img: "/images/faculty3.png"
-  },
-  {
-    name: "Prof. Mukul S. Sutaone",
-    role: "Professor",
-    email: "mssutaone@iiita.ac.in",
-    phone: "+91-532-292-2222",
-    img: "https://www.iiita.ac.in/institute/message_from_director/"
-  },
-  {
-    name: "Prof. Satish Kumar Singh",
-    role: "Professor",
-    email: "sk.singh@iiita.ac.in",
-    phone: "+91-532-292-2533",
-    img: "/images/faculty2.png"
-  },
-  {
-    name: "Dr. Shiv Ram Dubey",
-    role: "Associate Professor",
-    email: "srdubey@iiita.ac.in",
-    phone: "+91-532-292-2211",
-    img: "/images/faculty3.png"
-  },
-];
+
+function StudentCard({ student }) {
+  return (
+    <div className="faculty-card">
+      <img
+        src={student.img}
+        alt={student.name}
+        className="faculty-img"
+      />
+
+      <h3 className="faculty-name">{student.name}</h3>
+      <p className="faculty-role">Roll No: {student.rollNo}</p>
+
+      <p className="faculty-project">
+        <strong>Project:</strong> {student.project}
+      </p>
+    </div>
+  );
+}
+
+
 
 function Students() {
   return (
     <div className="faculty-container">
       <h1>STUDENTS</h1>
 
+      {/* PhD Students */}
+      <section id="Phd">
+      <h2 className="section-title">PhD Students</h2>
       <div className="faculty-grid">
-        {facultyData.map((f, index) => (
-          <div className="faculty-card" key={index}>
-            <img src={f.img} alt={f.name} className="faculty-img" />
-
-            <h3 className="faculty-name">{f.name}</h3>
-            <p className="faculty-role">{f.role}</p>
-
-            <p className="faculty-email">📧 {f.email}</p>
-            <p className="faculty-phone">📞 {f.phone}</p>
-          </div>
+        {phdStudents.map((student, index) => (
+          <StudentCard key={index} student={student} />
         ))}
       </div>
+      </section>
+
+      {/* M.Tech Students */}
+      <section id="M.tech">
+      <h2 className="section-title">M.Tech Students</h2>
+      <div className="faculty-grid">
+        {mtechStudents.map((student, index) => (
+          <StudentCard key={index} student={student} />
+        ))}
+      </div>
+      </section>
     </div>
   );
 }

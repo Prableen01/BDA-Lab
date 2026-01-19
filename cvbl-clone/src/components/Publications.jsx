@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/Publications.css";
+import { journals, conferences,workshops } from "../data/publications";
 
 export default function Publications() {
   return (
     <div className="publications-page">
-      
+
       <h1 className="page-title">PUBLICATIONS</h1>
 
       {/* Journals Section */}
@@ -12,26 +13,52 @@ export default function Publications() {
         <h2 className="section-title">Transactions and Journals</h2>
         <hr />
 
-        <div className="pub-item">
-          <b>66.</b> Author names … <a href="#">[link]</a>
-        </div>
-
-        <div className="pub-item">
-          <b>65.</b> Author names … <a href="#">[link]</a>
-        </div>
-
+        {journals.map((pub, index) => (
+          <div className="pub-item" key={pub.id}>
+            <b>{index+1}.</b>{" "}
+            {pub.citation}
+            {pub.link && (
+              <a href={pub.link} target="_blank" rel="noreferrer">
+                {" "} [link]
+              </a>
+            )}
+          </div>
+        ))}
       </section>
-
 
       {/* Conferences Section */}
       <section id="conferences">
         <h2 className="section-title">Conference Publications</h2>
         <hr />
 
-        <div className="pub-item">
-          <b>20.</b> Author names … <a href="#">[link]</a>
-        </div>
+        {conferences.map((pub, index) => (
+          <div className="pub-item" key={pub.id}>
+            <b>{index+1}.</b>{" "}
+            {pub.citation}
+            {pub.link && (
+              <a href={pub.link} target="_blank" rel="noreferrer">
+                {" "} [link]
+              </a>
+            )}
+          </div>
+        ))}
+      </section>
 
+      <section id="workshops">
+        <h2 className="section-title">Workshops</h2>
+        <hr />
+
+        {workshops.map((pub, index) => (
+          <div className="pub-item" key={pub.id}>
+            <b>{index+1}.</b>{" "}
+            {pub.citation}
+            {pub.link && (
+              <a href={pub.link} target="_blank" rel="noreferrer">
+                {" "} [link]
+              </a>
+            )}
+          </div>
+        ))}
       </section>
 
     </div>
