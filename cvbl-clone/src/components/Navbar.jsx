@@ -76,8 +76,8 @@ function Navbar() {
                 <Link smooth to="/publications#journals" onClick={handleLinkClick}>Publications - Journals</Link>
                 <Link smooth to="/publications#conferences" onClick={handleLinkClick}>Publications - Conferences</Link>
                 <Link smooth to="/publications#workshops" onClick={handleLinkClick}>Workshops</Link>
-                <Link smooth to="/projects#sponsored" onClick={handleLinkClick}>Sponsored Projects</Link>
-                <Link smooth to="/projects#grants" onClick={handleLinkClick}>Grants</Link>
+                <Link smooth to="/projects#completed" onClick={handleLinkClick}>Completed Projects</Link>
+                <Link smooth to="/projects#ongoing" onClick={handleLinkClick}>Ongoing Projects</Link>
                 <Link smooth to="/resources" onClick={handleLinkClick}>Resources</Link>
                 <Link smooth to="/datasets" onClick={handleLinkClick}>Datasets</Link>
               </div>

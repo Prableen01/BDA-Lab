@@ -1,60 +1,109 @@
 import React, { useEffect } from "react";
 import "../styles/Projects.css";
 import { projects } from "../data/projectsData";
+import { Link } from "react-router-dom";
 
-const renderProject = (proj, index) => (
+/* =========================
+   PROJECT WEBSITE LINK
+   ========================= */
+const ProjectLink = ({ link }) => {
+  if (!link) return null;
+
+  // Internal link
+  if (link.startsWith("/")) {
+    return (
+      <Link to={link} className="project-website">
+        Website Link
+      </Link>
+    );
+  }
+
+  // External link
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-website"
+    >
+      Website Link
+    </a>
+  );
+};
+
+/* =========================
+   PROJECT CARD (REUSABLE)
+   ========================= */
+const ProjectCard = (proj, index) => (
   <div className="project-item" key={proj.id}>
-    <b>{index + 1}. {proj.title}</b>
+    <div className="project-header">
+      <h3 className="project-title">
+        {index + 1}. {proj.title}
+      </h3>
 
-    {proj.agency && <p><strong>Agency:</strong> {proj.agency}</p>}
-    {proj.scheme && <p><strong>Scheme:</strong> {proj.scheme}</p>}
-    {proj.role && <p><strong>Role:</strong> {proj.role}</p>}
-    {proj.duration && <p><strong>Duration:</strong> {proj.duration}</p>}
-    {proj.amount && <p><strong>Amount:</strong> {proj.amount}</p>}
-    {proj.status && <p><strong>Status:</strong> {proj.status}</p>}
+      <ProjectLink link={proj.website || proj.link} />
+    </div>
 
-    {proj.collaborators && (
-      <p>
+    {proj.brief && <p className="project-brief">{proj.brief}</p>}
+
+    <div className="project-meta">
+      {proj.agency && (
+        <p><strong>Funding Agency:</strong> {proj.agency}</p>
+      )}
+      {proj.scheme && (
+        <p><strong>Scheme:</strong> {proj.scheme}</p>
+      )}
+      {proj.role && (
+        <p><strong>Role:</strong> {proj.role}</p>
+      )}
+      {proj.duration && (
+        <p><strong>Duration:</strong> {proj.duration}</p>
+      )}
+    </div>
+
+    {proj.collaborators && proj.collaborators.length > 0 && (
+      <div className="project-collaborators">
         <strong>Collaborators:</strong>
         <ul>
           {proj.collaborators.map((c, i) => (
             <li key={i}>{c}</li>
           ))}
         </ul>
-      </p>
+      </div>
     )}
   </div>
 );
 
+/* =========================
+   PROJECTS PAGE
+   ========================= */
 const Projects = () => {
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
       const section = document.querySelector(hash);
-      if (section) section.scrollIntoView({ behavior: "smooth" });
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }, []);
 
   return (
     <div className="projects-page">
-      <h1 className="page-title">PROJECTS & GRANTS</h1>
+      <h1 className="page-title">Projects & Grants</h1>
 
-      <section id="sponsored">
-        <h2 className="section-title">Sponsored Projects</h2>
+      {/* ONGOING PROJECTS */}
+      <section id="ongoing">
+        <h2 className="section-title">Ongoing Projects</h2>
         <hr />
-        {projects.sponsored.map(renderProject)}
+        {projects.ongoing.map(ProjectCard)}
       </section>
 
-      <section id="international">
-        <h2 className="section-title">International Projects</h2>
+      {/* COMPLETED PROJECTS */}
+      <section id="completed">
+        <h2 className="section-title">Completed Projects</h2>
         <hr />
-        {projects.international.map(renderProject)}
-      </section>
-
-      <section id="national">
-        <h2 className="section-title">National Projects</h2>
-        <hr />
-        {projects.national.map(renderProject)}
+        {projects.completed.map(ProjectCard)}
       </section>
     </div>
   );

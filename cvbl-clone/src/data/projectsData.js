@@ -1,10 +1,11 @@
 export const projects = {
-  international: [
+  completed: [
     {
       id: 1,
       title: "Technology Enabled Learning Environment (TEAL 2.0)",
       agency: "European Union (EU)",
       scheme: "Erasmus Capacity Building Program",
+      brief:"Technology Enabled Learning Environment (TEAL 2.O) is a funded project under European Union (EU), Erasmus (European Region Action Scheme for the Mobility of University students), Capacity building program.",
       role: "Project Manager (IIIT Allahabad)",
       duration: "2016 – 2019",
       collaborators: [
@@ -20,7 +21,8 @@ export const projects = {
         "University of Stavanger, Norway",
         "European Centre for Quality OOD, Bulgaria"
       ],
-      status: "Completed"
+      website:""
+      // brief : ""
     },
     {
       id: 2,
@@ -28,66 +30,173 @@ export const projects = {
         "Medical Cyber Physical System for Lifestyle Diseases using Big Data Analytics",
       agency: "ASEAN–India Science & Technology Development Fund (AISTDF)",
       scheme: "ASEAN–India Collaborative R&D Program",
-      role: "Lead Principal Investigator",
+      role: "Lead Project Investigator",
       duration: "Feb 2018 – Jan 2021",
       collaborators: [
-        "Universiti Teknologi Malaysia (Malaysia)",
-        "Universitas Budi Luhur, Jakarta (Indonesia)",
-        "IIIT Allahabad, India"
+        "Dr. Shafaatunnur Hasan, Universiti Teknologi Malaysia (Malaysia)",
+        "Dr. Mohd. Syafrullah, Universitas Budi Luhur, Jakarta (Indonesia)",
+        "Dr. Rahul Kala, IIIT Allahabad, India"
       ],
-      status: "Completed"
-    }
-  ],
-
-  national: [
+      brief : "",
+      website:""
+    },
     {
-      id: 1,
+      id:3 ,
       title:
         "Real Time Complex Event Processing and Analytics for Smart Buildings",
-      agency:
-        "DST – Interdisciplinary Cyber Physical Systems (ICPS), Govt. of India",
-      role: "Principal Investigator",
+      agency: "Call for proposal under the Interdisciplinary Cyber Physical Systems (ICPS) program. Government of India Ministry of Science & Technology Department of Science & Technology Interdisciplinary Cyber Physical Systems (ICPS) Division.",
+      scheme: "",
+      role: "Project Investigator",
       duration: "Feb 2019 – Jan 2022",
-      status: "Completed"
+      collaborators: [
+        
+      ],
+      brief:"",
+      website:""
     },
     {
-      id: 2,
+      id:4 ,
       title:
-        "Modeling and Simulation of Environmental and Occupational Epidemiology Data in Indian Context",
-      agency: "CSIR – Extra Mural Research",
-      role: "Principal Investigator",
+        "Modeling and simulation of environmental and occupational epidemiology data in Indian context: An ontology based data mining approach",
+      agency: "Council of Scientific & Industrial Research (CSIR), Extra Mural Research (EMR) Government of India.",
+      scheme: "",
+      role: "Project Investigator",
       duration: "Jan 2020 – Jan 2023",
-      status: "Completed"
+      collaborators: [
+        "Council of Scientific & Industrial Research (CSIR), Indian Institute of Toxicology Research (IITR), Lucknow"
+      ],
+      brief:"",
+      website:""
+    },
+    {
+      id:5 ,
+      title:
+        "Big Data Analytics: Recent Trends and Applications",
+      agency: "",
+      scheme: "",
+      role: "Coordinator",
+      duration: "December 13-14, 2017",
+      collaborators: [
+       ],
+      brief : "Bilateral Workshop jointly organized by IIIT Allahabad and University of Peradeniya, Sri Lanka ",
+      website:""
+    },
+    {
+      id:6 ,
+      title:
+        "Micro and Nano-Electronic Devices and Technologies for Environmental Monitorings",
+      agency: "Indo Swiss Joint Research Program (ISJRP)",
+      scheme: "",
+      role: "Visiting researcher",
+      duration: "December 2011 to January 2012",
+      collaborators: [
+      ],
+      brief : "Full Financial Support was awarded to carry out joint research work and to gain knowledge regarding the recent research and experimental facility/work at EPFL. ",
+      website:""
+    },
+    {
+      id:7 ,
+      title:
+        "Data Mining using OALP Techniques",
+      agency: "Liverpool John Moores University, Liverpool U.K. under Indo-UK REC Project, a joint collaboration in between School of Computing & Mathematical Science, LJMU Liverpool UK and Motilal Nehru National Institute of Technology, Allahabad",
+      scheme: "",
+      role: "Visiting researcher",
+      duration: "November 1999 to February 2000",
+      collaborators: [
+
+      ],
+      brief : "",
+      website:""
+    },
+    {
+      id:8 ,
+      title:
+        "Data Mining using OALP Techniques",
+      agency: "Liverpool John Moores University, Liverpool U.K. under Indo-UK REC Project, a joint collaboration in between School of Computing & Mathematical Science, LJMU Liverpool UK and Motilal Nehru National Institute of Technology, Allahabad",
+      scheme: "",
+      role: "Visiting researcher",
+      duration: "November 1999 to February 2000",
+      collaborators: [
+
+      ],
+      brief : "",
+      website:""
+    },
+    {
+      id:9 ,
+      title:
+        "Parallel and Distributed Data stream mining ",
+      agency: "MHRD Scheme on Global Initiative on Academic Network(GIAN)",
+      scheme: "",
+      role: "Project Investigator",
+      duration: "December 18, 2018 to December 22,2018",
+      collaborators: [],
+      brief : " ",
+      website:""
+    },
+    {
+      id:10 ,
+      title:
+        "Real time stream analytics and machine learning for cypher -physical streams",
+      agency: "MHRD Scheme on Global Initiative on Academic Network(GIAN)",
+      scheme: "",
+      role: "Project Investigator",
+      duration: "January 4-7, 2018",
+      collaborators: [],
+      brief : "This proposed workshop was hosted in conjuction with International Conference on Distributed Computing and Networking at IIT BHU",
+      website:""
+    },
+    {
+      id:11 ,
+      title:
+        "Stream Analytics for Processing Big Data in motion for Real Time Responses",
+      agency: "IIITA Seed Money",
+      scheme: "",
+      role: "Project Investigator",
+      duration: "May 2017- June 2018",
+      collaborators: [],
+      brief : "",
+      website:""
     }
   ],
 
-  sponsored: [
-    {
-      id: 1,
+  ongoing: [
+  {
+      id:1 ,
       title:
-        "Modern AI-Based Computer-Assisted Criminal Investigation using Sketch-to-Face Synthesis",
-      agency: "I-DAPT HUB Foundation, IIT BHU",
-      duration: "2025 – 2027",
-      amount: "₹19,97,424/-",
-      status: "Ongoing"
+        "A Multimodal Analysis for Mental Disorder Recognition to Improve Mental Health and Well Being (MODEST)",
+      agency: "Council of Science and Technology (CST UP), Lucknow, Uttar Pradesh",
+      scheme: "",
+      role: "Project Investigator",
+      duration: "December 2024 to December 2027",
+      collaborators: [],
+      brief : "Developed a multimodal AI system using EEG, audio, text, and video for early mental-health detection, along with preprocessing tools, baseline models, fusion methods, and XAI-based explanations.",
+      website:"https://www.google.com/"
     },
     {
-      id: 2,
+      id:2 ,
       title:
-        "AI System Design to Tackle Foot & Mouth Disease in Cattle from Rural Areas",
-      agency: "Council of Science & Technology, Uttar Pradesh",
-      duration: "2025 – 2028",
-      amount: "₹15,08,000/-",
-      status: "Ongoing"
+        "A cyber-physical system-based personal assistance device for wheelchair users",
+      agency: "iHUB Divyasampark, IIT Roorkee",
+      scheme: "",
+      role: "Project Investigator",
+      duration: "February 2025 to February 2026",
+      collaborators: [],
+      brief : "Developed a complete pipeline for integrating video based gestures and flex generated gestures to provide assistance to the disabled persons",
+      website:"/projectpage"
     },
     {
-      id: 3,
-      title:
-        "Deep Learning Methods for Object Recognition in Underwater Acoustic Images",
-      agency: "Naval Research Board (NRB), DRDO",
-      duration: "2025 – 2028",
-      amount: "₹30,90,147/-",
-      status: "Ongoing"
+      id:3 ,
+      title: "Leveraging Domain Ontology and Knowledge Graphs for Efficient Inference from Geospatial Big Data through Machine Learning",
+      agency: "Council of Science and Technology (CST UP), Lucknow, Uttar Pradesh",
+      scheme: "",
+      role: "Project Investigator",
+      duration: "Sanctioned on August 22,2025",
+      collaborators: [],
+      brief : "Developed understanding with how ontology frameworks and Big data approaches helps for Geospatial data mining",
+      website:"https://geospatial-kg-inference.netlify.app/"
     }
-  ]
+  ],
+
+  
 };

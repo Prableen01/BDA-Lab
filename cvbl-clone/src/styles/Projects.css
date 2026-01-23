@@ -1,89 +1,112 @@
+/* ===============================
+   PAGE LAYOUT
+================================ */
 .projects-page {
   width: 100%;
   max-width: 1250px;
-  margin: 120px auto 60px auto;
+  margin: 120px auto 60px;
   padding: 0 30px;
 
-  background: linear-gradient(140deg, #020617, #010b28 60%);
-  color: #cfe6ff;
-}
-body{
-  width: 100vw;
-  background: linear-gradient(140deg, #020617, #010b28 60%);
-
+  background: var(--light-bg);
+  color: var(--text-dark);
 }
 
-/* MAIN TITLE */
+/* ===============================
+   MAIN TITLE
+================================ */
 .page-title {
   text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 70px;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
 
-  color: #7beaff;
-  text-shadow: none;
-  border-bottom: 1px solid rgba(0,255,200,0.22);
-  padding-bottom: 12px;
+  color: var(--primary);
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 14px;
 }
 
-/* SECTION TITLE */
+/* ===============================
+   SECTION TITLE
+================================ */
 .section-title {
   text-align: center;
-  font-size: 30px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 16px;
 
-  color: #6bf6d7;
+  color: var(--primary);
 }
 
-/* Soft cyber divider */
+/* ===============================
+   SECTION DIVIDER
+================================ */
 section hr {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,255,200,0.3), transparent);
+  background: var(--border-light);
   margin-bottom: 30px;
 }
 
-/* PROJECT BLOCK */
+/* ===============================
+   PROJECT / GRANT ITEM
+================================ */
 .project-item {
-  background: #0b162d;
-  border: 1px solid rgba(0,255,200,0.25);
-  border-radius: 12px;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
 
-  padding: 18px 20px;
-  margin-bottom: 25px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
 
   line-height: 1.7;
-  transition: 0.3s ease;
+  color: var(--text-muted);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Soft hover — NO glow */
 .project-item:hover {
-  transform: translateY(-3px);
-  border-color: rgba(0,255,200,0.45);
-  background: #0f2042;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
 }
 
+/* ===============================
+   PROJECT TITLE / NUMBER
+================================ */
 .project-item b {
-  font-size: 19px;
-  color: #78dfff;
+  font-size: 16px;
+  color: var(--primary);
 }
 
-/* Labels like "Agency", "Duration" */
+/* ===============================
+   LABELS (AGENCY, DURATION, ETC.)
+================================ */
 .project-item strong {
-  color: #8cffd6;
+  color: var(--secondary);
+  font-weight: 600;
 }
 
-/* For navbar smooth jump */
+/* ===============================
+   SCROLL OFFSET FOR NAVBAR
+================================ */
 section {
   scroll-margin-top: 110px;
 }
 
-/* Responsive */
-@media(max-width: 900px){
-  .page-title { font-size: 32px; }
-  .section-title { font-size: 24px; }
-  .project-item { font-size: 14px; }
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .page-title {
+    font-size: 30px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .project-item {
+    font-size: 14.5px;
+  }
 }

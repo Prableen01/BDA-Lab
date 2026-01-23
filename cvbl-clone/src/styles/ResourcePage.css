@@ -1,81 +1,89 @@
-/* ===== RESOURCES PAGE WRAPPER ===== */
+/* ===============================
+   RESOURCES PAGE WRAPPER
+================================ */
 .resources-wrapper {
-  padding: 110px 40px 80px 40px;
+  padding: 110px 40px 80px;
   max-width: 1250px;
   margin: auto;
 
-  background: linear-gradient(140deg, #020617, #010b28 65%);
-  color: #d6eeff;
+  background: var(--light-bg);
+  color: var(--text-dark);
 }
 
-body{
-  width: 100vw;
-  background: linear-gradient(140deg, #020617, #010b28 60%);
-
-}
-
-/* ===== MAIN TITLE ===== */
+/* ===============================
+   MAIN TITLE
+================================ */
 .resources-title {
   text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 45px;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
 
-  color: #79ffe6;
-  border-bottom: 1px solid rgba(0,255,200,0.25);
-  padding-bottom: 10px;
+  color: var(--primary);
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 14px;
 }
 
-/* ===== SECTION HEADINGS ===== */
+/* ===============================
+   SECTION HEADINGS
+================================ */
 .resources-section {
   margin-top: 60px;
 }
 
 .resources-section h2 {
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 600;
   margin-bottom: 18px;
-  color: #7dfaff;
+  color: var(--primary);
   text-align: center;
 }
 
-/* ===== TABLE ===== */
+/* ===============================
+   RESOURCE TABLE
+================================ */
 .resource-table {
   width: 100%;
   border-collapse: collapse;
 
-  background: rgba(6, 20, 60, 0.9);
-  border: 1px solid rgba(0,255,200,0.25);
-  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
   overflow: hidden;
 
-  box-shadow: 0 0 25px rgba(0,255,200,0.18);
+  box-shadow: var(--shadow-soft);
 }
 
-/* Header */
+/* ===============================
+   TABLE HEADER
+================================ */
 .resource-table th {
-  padding: 16px;
+  padding: 16px 18px;
   text-align: left;
-  font-size: 17px;
-  font-weight: 800;
+  font-size: 15.5px;
+  font-weight: 600;
 
-  background: rgba(0,255,200,0.12);
-  color: #bafaff;
+  background: #F0F4FA;
+  color: var(--text-dark);
 }
 
-/* Rows */
+/* ===============================
+   TABLE ROWS
+================================ */
 .resource-table td {
   padding: 15px 18px;
-  font-size: 16px;
-  color: #e8f6ff;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
+  font-size: 15px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-light);
 }
 
-/* Row hover effect */
+/* ===============================
+   ROW HOVER
+================================ */
 .resource-table tr:hover {
-  background: rgba(0,255,200,0.12);
-  transition: 0.25s ease;
+  background: #F7F9FC;
+  transition: background 0.2s ease;
 }
 
 /* Remove last border */
@@ -83,15 +91,24 @@ body{
   border-bottom: none;
 }
 
-/* Smooth scroll offset */
+/* ===============================
+   SCROLL OFFSET FOR NAVBAR
+================================ */
 section {
   scroll-margin-top: 110px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media(max-width: 900px){
-  .resources-title { font-size: 30px; }
-  .resources-section h2 { font-size: 22px; }
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .resources-title {
+    font-size: 30px;
+  }
+
+  .resources-section h2 {
+    font-size: 22px;
+  }
 
   .resource-table th,
   .resource-table td {

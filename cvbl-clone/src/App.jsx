@@ -15,6 +15,8 @@ import Projects from "./components/Projects";
 import DatasetsPage from "./components/DatasetsPage";
   import ResourcesPage from "./components/ResourcesPage";
 import { HashLink as Link } from 'react-router-hash-link';
+import ProjectPage from './components/ProjectPage';
+import BimodalGestureCareWebsite from './components/GestureCarepage';
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resources" element={<ResourcesPage />} />
         <Route path="/datasets" element={<DatasetsPage />} />
+        <Route path="/projectpage" element={<ProjectPage />} />
+        <Route path="/gesturecare" element={<BimodalGestureCareWebsite />} />
 
 
         </Routes>

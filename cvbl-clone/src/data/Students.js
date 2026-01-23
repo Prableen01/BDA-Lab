@@ -2,20 +2,20 @@ export const phdStudents = [
   {
     name: "Sadhana Tiwari",
     rollNo: "PHD2021CV01",
-    project: "Deep Learning for Medical Image Analysis",
-    img: "/images/phd1.jpg"
+    project: "Technology in Healthcare",
+    img: "/Sadhana Tiwari.jpg"
   },
   {
     name: "Ashutosh Kumar",
     rollNo: "PHD2020CV05",
     project: "Biometric Spoof Detection",
-    img: "/images/phd2.jpg"
+    img: "/Ashutosh Sir.jpg"
   },
   {
     name: "Shashi Shekhar Kumar",
     rollNo: "PHD2020CV05",
     project: "Biometric Spoof Detection",
-    img: "/images/phd2.jpg"
+    img: "/Shashi Shekhar.jpg"
   },
   {
     name: "Amit Tyagi",
@@ -24,15 +24,15 @@ export const phdStudents = [
     img: "/images/phd2.jpg"
   },
   {
-    name: "Ritesh Chandrar",
-    rollNo: "PHD2020CV05",
+    name: "Ritesh Chandra",
+    rollNo: "RSI2022001",
     project: "Biometric Spoof Detection",
-    img: "/images/phd2.jpg"
+    img: "/Ritesh Chandra.jpg"
   },
   {
     name: "Anvita Srivastava",
     rollNo: "PHD2020CV05",
-    project: "Biometric Spoof Detection",
+    project: "CSIR Project",
     img: "/images/phd2.jpg"
   },
   {
@@ -50,8 +50,8 @@ export const phdStudents = [
   {
     name: "Himanshi Singh",
     rollNo: "PHD2020CV05",
-    project: "Biometric Spoof Detection",
-    img: "/images/phd2.jpg"
+    project: "A Multimodal Analysis for Mental Disorder Recognition to Improve Mental Health and Well-Being (MODEST)",
+    img: "/Himanshi Singh.jpeg"
   }
 
 ];

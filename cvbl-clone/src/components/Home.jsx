@@ -10,16 +10,16 @@ function Home() {
         <div className="hero-overlay">
           <h1>BIG DATA ANALYTICS LAB</h1>
           <p className="hero-tagline">
-            Empowering Insights • Driving Intelligence • Transforming Data into Knowledge
+            Research • Analytics • Intelligent Data Systems
           </p>
 
           <div className="hero-buttons">
             <button onClick={() => document.getElementById("mission").scrollIntoView({ behavior: "smooth" })}>
-              MISSION & VISION
+              Mission & Vision
             </button>
 
             <button onClick={() => document.getElementById("objectives").scrollIntoView({ behavior: "smooth" })}>
-              CORE OBJECTIVES
+              Core Objectives
             </button>
           </div>
         </div>
@@ -28,131 +28,135 @@ function Home() {
       {/* MISSION + UPDATES */}
       <section id="mission" className="mission-section">
         <div className="mission-left">
-          <h2>MISSION & VISION</h2>
+          <h2>Mission & Vision</h2>
           <p>
-            The Big Data Analytics Lab aims to advance cutting-edge research in data science,
-            large-scale analytics, distributed computing, and AI-powered decision making.
-            Our vision is to enable intelligent systems that extract meaningful insights
-            from massive datasets to solve real-world challenges in healthcare, finance,
-            smart cities, cybersecurity, and beyond.
+            The Big Data Analytics Lab focuses on research and development in data
+            analytics, distributed systems, and intelligent computing. The lab aims
+            to design scalable methods and tools for analysing large and complex
+            datasets arising from real-world domains such as healthcare, smart
+            infrastructure, cybersecurity, and social systems.
+          </p>
+          <p>
+            Our vision is to contribute meaningful research outcomes, promote
+            interdisciplinary collaboration, and support academic and industrial
+            innovation through data-driven solutions.
           </p>
         </div>
 
         <div className="mission-right">
-          <h2>RECENT UPDATES</h2>
+          <h2>Recent Updates</h2>
 
           <div className="update-item">
             <a>Big Data Hackathon 2026</a>
-            <span>Feb 18–20, 2026</span>
+            <span>February 18–20, 2026</span>
           </div>
 
           <div className="update-item">
-            <a>Workshop on Advanced AI & Data Engineering</a>
-            <span>Jan 12–13, 2026</span>
+            <a>Workshop on AI and Data Engineering</a>
+            <span>January 12–13, 2026</span>
           </div>
 
           <div className="update-item">
-            <a>Industry Collaboration with NVIDIA & AWS</a>
+            <a>Industry Collaboration with NVIDIA and AWS</a>
             <span>Ongoing</span>
           </div>
 
           <div className="update-item">
             <a>International Conference on Data Intelligence</a>
-            <span>Nov 2025</span>
+            <span>November 2025</span>
           </div>
         </div>
       </section>
 
       {/* RESEARCH FIELDS */}
       <section className="research-section">
-        <h2>RESEARCH DOMAINS</h2>
+        <h2>Research Domains</h2>
         <p className="research-subtext">
-          We explore next-generation intelligent data technologies powering the future.
+          The lab works across the following core research areas.
         </p>
 
         <div className="research-grid">
 
-  <div className="research-card">
-    <div className="icon-circle">📊</div>
-    <h3>Big Data Analytics</h3>
-    <p>
-      Large-scale data analysis, pattern discovery, and predictive insights
-      using distributed computing frameworks.
-    </p>
-  </div>
+          <div className="research-card">
+  <div className="icon-circle">■</div>
+  <h3>Big Data Analytics</h3>
+  <p>
+    Scalable analysis of large datasets using distributed and parallel
+    computing frameworks for knowledge discovery.
+  </p>
+</div>
 
-  <div className="research-card">
-    <div className="icon-circle">📈</div>
-    <h3>Data Visualisation</h3>
-    <p>
-      Interactive dashboards and visual analytics for effective interpretation
-      of complex datasets.
-    </p>
-  </div>
+<div className="research-card">
+  <div className="icon-circle">▲</div>
+  <h3>Data Visualisation</h3>
+  <p>
+    Visual analytics and dashboard design for effective understanding
+    and communication of complex data.
+  </p>
+</div>
 
-  <div className="research-card">
-    <div className="icon-circle">🧠</div>
-    <h3>AI & Machine Learning</h3>
-    <p>
-      Intelligent systems using machine learning and deep learning for
-      automation, prediction, and decision-making.
-    </p>
-  </div>
+<div className="research-card">
+  <div className="icon-circle">●</div>
+  <h3>Artificial Intelligence & Machine Learning</h3>
+  <p>
+    Machine learning and deep learning models for prediction,
+    classification, and intelligent decision support systems.
+  </p>
+</div>
 
-  <div className="research-card">
-    <div className="icon-circle">💻</div>
-    <h3>Software Engineering</h3>
-    <p>
-      Design and development of scalable, secure, and maintainable software
-      systems.
-    </p>
-  </div>
-
+<div className="research-card">
+  <div className="icon-circle">◆</div>
+  <h3>Software Systems</h3>
+  <p>
+    Development of reliable, scalable, and secure software systems
+    supporting data-intensive applications.
+  </p>
+</div>
 </div>
 
       </section>
 
       {/* OBJECTIVES */}
       <section id="objectives" className="objectives-section">
-        <h2>CORE OBJECTIVES</h2>
+        <h2>Core Objectives</h2>
 
         <div className="objective-box">
-          To create a collaborative environment for students, researchers,
-          and faculty to innovate using massive data-driven technologies.
+          To provide a research-oriented environment for students and researchers
+          to work on large-scale data analytics and intelligent systems.
         </div>
 
         <div className="objective-box">
-          To bridge academia and industry through real-world data projects,
-          fostering innovation and impactful research outcomes.
+          To strengthen collaboration between academia and industry through
+          sponsored projects, workshops, and applied research initiatives.
         </div>
 
         <div className="objective-box">
-          Our lab focuses on:
+          The lab aims to:
           <ul>
-            <li>Developing scalable big data platforms</li>
-            <li>Enhancing AI-driven decision intelligence</li>
-            <li>Promoting advanced analytics research & publications</li>
-            <li>Building real-world industrial & societal data solutions</li>
+            <li>Design scalable data analytics and machine learning frameworks</li>
+            <li>Encourage high-quality research publications</li>
+            <li>Support interdisciplinary and application-driven research</li>
+            <li>Develop practical solutions for societal and industrial problems</li>
           </ul>
         </div>
 
         <div className="objective-box">
-          The Lab envisions:
+          Long-term goals include:
           <ul>
-            <li>Establishing high-performance computing infrastructure</li>
-            <li>Industry & Government collaborations</li>
-            <li>Training students with future-ready skills</li>
-            <li>Driving innovation in intelligent data ecosystems</li>
+            <li>Establishing advanced computing and analytics infrastructure</li>
+            <li>Expanding national and international collaborations</li>
+            <li>Training students with strong research and technical skills</li>
+            <li>Contributing to policy-relevant and impact-oriented research</li>
           </ul>
         </div>
       </section>
 
       {/* FUNDING */}
       <section id="funding" className="funding-section">
-        <h2>FUNDING & COLLABORATION</h2>
+        <h2>Funding & Collaboration</h2>
         <p>
-          The Big Data Analytics Lab is supported by industry leaders, research grants,
-          and government funding agencies fostering innovation and excellence.
+          The lab is supported through research grants, institutional funding,
+          and collaborations with industry partners and government agencies.
         </p>
       </section>
 

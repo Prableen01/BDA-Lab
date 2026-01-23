@@ -1,86 +1,93 @@
-/* ==== PAGE LAYOUT ==== */
+/* ===============================
+   PAGE LAYOUT
+================================ */
 .publications-page {
   width: 100%;
   max-width: 1250px;
-  margin: 120px auto 60px auto;
+  margin: 120px auto 60px;
   padding: 0 30px;
 
-  background: linear-gradient(140deg, #020617, #010b28 60%);
-  color: #cfe6ff;
+  background: var(--light-bg);
+  color: var(--text-dark);
 }
 
-/* ==== MAIN PAGE TITLE ==== */
+/* ===============================
+   MAIN PAGE TITLE
+================================ */
 .page-title {
   text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 70px;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
 
-  color: #7beaff;
-  border-bottom: 1px solid rgba(0,255,200,0.22);
-  padding-bottom: 12px;
+  color: var(--primary);
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 14px;
 }
 
-/* ==== SECTION TITLES ==== */
+/* ===============================
+   SECTION TITLES
+================================ */
 .section-title {
   text-align: center;
-  font-size: 30px;
-  font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 16px;
 
-  color: #6bf6d7;
+  color: var(--primary);
 }
 
-/* Cyber Divider */
+/* ===============================
+   SECTION DIVIDER
+================================ */
 section hr {
   width: 100%;
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,255,200,0.35), transparent);
+  background: var(--border-light);
   margin-bottom: 30px;
 }
 
-/* ==== PUBLICATION ITEM STYLE ==== */
+/* ===============================
+   PUBLICATION ITEM
+================================ */
 .pub-item {
-  font-size: 18px;
+  font-size: 15.5px;
   line-height: 1.7;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
-  background: #0b162d;
-  border: 1px solid rgba(0,255,200,0.25);
-  border-radius: 12px;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
 
-  padding: 16px 18px;
-  color: #d8eeff;
-  transition: 0.3s ease;
+  padding: 16px 20px;
+  color: var(--text-muted);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-body{
-  width: 100vw;
-  background: linear-gradient(140deg, #020617, #010b28 60%);
-
-}
-
-/* Soft hover */
 .pub-item:hover {
-  transform: translateY(-3px);
-  border-color: rgba(0,255,200,0.45);
-  background: #0f2042;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
 }
 
-/* Numbers */
+/* ===============================
+   NUMBERING
+================================ */
 .pub-item b {
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 6px;
-  color: #78dfff;
+  color: var(--primary);
 }
 
-/* Links */
+/* ===============================
+   LINKS
+================================ */
 .pub-item a {
-  color: #7beaff;
-  font-weight: bold;
+  color: var(--secondary);
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -88,14 +95,26 @@ body{
   text-decoration: underline;
 }
 
-/* Smooth navbar scroll */
+/* ===============================
+   SCROLL OFFSET FOR NAVBAR
+================================ */
 section {
   scroll-margin-top: 110px;
 }
 
-/* ==== RESPONSIVE ==== */
-@media(max-width: 900px){
-  .page-title { font-size: 32px; }
-  .section-title { font-size: 24px; }
-  .pub-item { font-size: 16px; }
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .page-title {
+    font-size: 30px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .pub-item {
+    font-size: 14.5px;
+  }
 }

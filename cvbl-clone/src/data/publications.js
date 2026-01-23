@@ -243,6 +243,19 @@ export const journals = [
     id: 49,
     citation: 'Sonali Agarwal, G. N. Pandey. "Studies of E Governance in India Using Data Mining perspective." Journal of Computing, volume 2, issue 10, October 2010.',
     link: "https://sites.google.com/site/journalofcomputing"
+  },{
+    id: 50,
+    citation: 'Sonbhadra, Sanjay Kumar, Sonali Agarwal, Mohammad Syafrullah, and Krisna Adiyarta. "Email classification via intention-based segmentation." In 2020 7th International Conference on Electrical Engineering, Computer Sciences and Informatics (EECSI), pp. 38-44. IEEE, 2020.',
+    link: "https://ieeexplore.ieee.org/abstract/document/9251306%22"
+  },{
+    id:51,
+    citation: 'Sonbhadra, Sanjay Kumar, Sonali Agarwal, Mohammad Syafrullah, and Krisna Adiyarta. "Person tracking with non-overlapping multiple cameras." In 2020 7th International Conference on Electrical Engineering, Computer Sciences and Informatics (EECSI), pp. 137-143. IEEE, 2020.',
+    link:"https://ieeexplore.ieee.org/abstract/document/9251306"
+  },
+  {
+    id:52,
+    citation:'onbhadra, Sanjay Kumar, Sonali Agarwal, Mohammad Syafrullah, and Krisna Adiyarta. "Aggressive driving behaviour classification using smartphones accelerometer sensor." In 2020 7th International Conference on Electrical Engineering, Computer Sciences and Informatics (EECSI), pp. 77-82. IEEE, 2020.',
+    link:"https://ieeexplore.ieee.org/abstract/document/9251913"
   }
 ];
 
