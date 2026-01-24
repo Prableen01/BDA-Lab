@@ -147,3 +147,21 @@
 .nav-links span {
   white-space: nowrap;
 }
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+.nav-logo {
+  height: 36px;      /* adjust as needed */
+  width: auto;
+  object-fit: contain;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

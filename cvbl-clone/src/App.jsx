@@ -17,7 +17,11 @@ import DatasetsPage from "./components/DatasetsPage";
 import { HashLink as Link } from 'react-router-hash-link';
 import ProjectPage from './components/ProjectPage';
 import BimodalGestureCareWebsite from './components/GestureCarepage';
-
+import HealthMonitoringProject from './components/HealthMonitoring';
+import CEPProject from "./components/CEPProject";
+import OntologyProject from "./components/Ontology";
+import CloudPlatformProject from "./components/CloudPlatform";
+import MobileApplicationProject from "./components/Mobileapp";
 
 function App() {
   return (
@@ -39,6 +43,11 @@ function App() {
         <Route path="/datasets" element={<DatasetsPage />} />
         <Route path="/projectpage" element={<ProjectPage />} />
         <Route path="/gesturecare" element={<BimodalGestureCareWebsite />} />
+        <Route path="/healthmonitor" element={<HealthMonitoringProject />} />
+        <Route path="/cepproject" element={<CEPProject />} />
+        <Route path="/ontologyproject" element={<OntologyProject />} />
+        <Route path="/cloudplatform" element={<CloudPlatformProject />} />
+        <Route path="/mobile-app" element={<MobileApplicationProject />} />
 
 
         </Routes>

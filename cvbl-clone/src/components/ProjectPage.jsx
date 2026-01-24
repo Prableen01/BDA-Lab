@@ -11,6 +11,27 @@ const ProjectPage = () => {
     "Clinical Validation: Conduct trials to evaluate the device’s impact on health outcomes and quality of life."
   ];
 
+  const contributors = [
+{
+name: "Prof. Sonali Agarwal",
+role: "Project Investigator",
+cv: "https://profile.iiita.ac.in/sonali/CV.pdf",
+photo: "https://profile.iiita.ac.in/sonali/static/images/sa.jpg"
+},
+{
+name: "Prof. Navjot Singh",
+role: "Co-Project Investigator",
+cv: "https://drive.google.com/your-cv-link-2",
+photo: "https://it.iiita.ac.in/photo/navjot.jpg"
+},
+{
+name: "Sadhana Tiwari",
+role: "Post Doctoral Fellow",
+cv: "",
+photo: "/Sadhana Tiwari.jpg"
+}
+];
+
   const modules = [
     {
       title: "1. Bimodal Gesture Recognition System",
@@ -22,31 +43,31 @@ const ProjectPage = () => {
       title: "2. WUHM Ontology Development",
       description:
         "The Wheelchair Users' Health Monitoring (WUHM) ontology integrates sensor data and medical guidelines to monitor user health. It supports disease differentiation, historical and real-time data analysis, and personalized advice for healthcare providers.",
-      link: "https://example.com/module2-details"
+      link: "/healthmonitor"
     },
     {
       title: "3. Reasoning on Ontology & Hadoop",
       description:
         "Continuous sensor data is stored in Hadoop HDFS, analyzed via MapReduce and HiveQL, and queried using SPARQL. Insights from this reasoning enable informed decision-making, enhancing safety and health outcomes for users.",
-      link: "/modules/ontology-hadoop"
+      link: "/ontologyproject"
     },
     {
       title: "4. Complex Event Detection & Decision Making",
       description:
         "Real-time events are detected using Kafka streams and a CEP engine. Sensor data such as heart rate and body temperature are monitored against thresholds to detect diseases and support proactive interventions.",
-      link: "https://example.com/module4-details"
+      link: "/cepproject"
     },
     {
       title: "5. Mobile Application",
       description:
         "The app provides real-time health monitoring, alerts, messages to caregivers/doctors, medication reminders, and exercise schedules. It is compatible with multiple devices and designed for flexibility and user-friendly interaction.",
-      link: "/modules/mobile-app"
+      link: "/mobile-app"
     },
     {
       title: "6. Cloud-Based Platform",
       description:
         "A centralized cloud platform stores patient profiles, historical data, and medication details. It enables secure communication, remote monitoring, and actionable insights for timely healthcare intervention.",
-      link: "https://example.com/module6-details"
+      link: "/cloudplatform"
     }
   ];
 
@@ -68,9 +89,39 @@ const ProjectPage = () => {
 
   return (
     <div className="project-page">
+
       <h1 className="page-title">
-        Cyber-Physical Health Assistance Device for Wheelchair Users
-      </h1>
+  Cyber-Physical Health Assistance Device for Wheelchair Users
+</h1>
+
+{/* Contributors */}
+<section className="contributors-section">
+  <h2 className="section-title">Contributors</h2>
+
+  <div className="contributors-grid">
+  {contributors.map((person, index) => (
+    <div className="contributor-card" key={index}>
+      <img
+        src={person.photo}
+        alt={person.name}
+        className="contributor-photo"
+      />
+
+      <h3 className="contributor-name">{person.name}</h3>
+      <p className="contributor-role">{person.role}</p>
+
+      <a
+        href={person.cv}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="cv-link"
+      >
+        View CV
+      </a>
+    </div>
+  ))}
+</div>
+</section>
 
       <section className="project-section">
         <h2 className="section-title">Project Brief</h2>

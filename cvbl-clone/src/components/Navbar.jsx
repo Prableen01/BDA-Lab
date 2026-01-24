@@ -27,8 +27,13 @@ function Navbar() {
     <nav className="navbar" ref={navRef}>
       {/* LEFT LOGO */}
       <div className="nav-left">
-        <span className="logo">BDAL</span>
-      </div>
+  <img
+    src="/logo.png"   // change path if needed
+    alt="BDAL Logo"
+    className="nav-logo"
+  />
+  <span className="logo">BDAL</span>
+</div>
 
       {/* CENTER NAV */}
       <div className="nav-center">
@@ -63,7 +68,8 @@ function Navbar() {
               <div className="dropdown-menu">
                 <Link to="/faculty" onClick={handleLinkClick}>Faculty</Link>
                 <Link to="/students#Phd" onClick={handleLinkClick}>Students-Phd</Link>
-                <Link to="/students#M.tech" onClick={handleLinkClick}>Students-M.tech</Link>
+                <Link to="/students#Mtech" onClick={handleLinkClick}>Students-M.tech</Link>
+                <Link to="/students#BTech" onClick={handleLinkClick}>Students-B.tech</Link>
               </div>
             )}
           </li>
@@ -89,10 +95,10 @@ function Navbar() {
             <span onClick={() => toggleMenu("courses")}>Courses ▼</span>
             {activeMenu === "courses" && (
               <div className="dropdown-menu">
-                <Link to="/ug" onClick={handleLinkClick}>Big Data Analytics</Link>
-                <Link to="/pg" onClick={handleLinkClick}>AI & Machine Learning</Link>
-                <Link to="/workshops" onClick={handleLinkClick}>Data Visualisation</Link>
-                <Link to="/workshops" onClick={handleLinkClick}>Software Engineering</Link>
+                <Link to="https://profile.iiita.ac.in/sonali/courses.html" onClick={handleLinkClick}>Big Data Analytics</Link>
+                <Link to="https://profile.iiita.ac.in/sonali/courses.html" onClick={handleLinkClick}>AI & Machine Learning</Link>
+                <Link to="https://profile.iiita.ac.in/sonali/courses.html" onClick={handleLinkClick}>Data Visualisation</Link>
+                <Link to="https://profile.iiita.ac.in/sonali/courses.html" onClick={handleLinkClick}>Software Engineering</Link>
               </div>
             )}
           </li>

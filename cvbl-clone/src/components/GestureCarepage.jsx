@@ -127,7 +127,7 @@ export default function GestureCarePage() {
       <section className="gc3-team">
         <h2>Project Team</h2>
         <p className="gc3-team-members">
-          Tanisha · Prableen Kaur · Swarup Narkhede · Shravani Wange · Pratik Pansare
+          Sadhana Tiwari · Ritesh Chandra ·  Tanisha · Prableen Kaur · Swarup Narkhede · Shravani Wange · Pratik Pansare
         </p>
         <p className="gc3-guide">Under the supervision of Prof. Sonali Agarwal</p>
       </section>
