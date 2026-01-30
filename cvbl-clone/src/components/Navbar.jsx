@@ -52,7 +52,7 @@ const toggleMobileDropdown = (menu) => {
         <ul className="nav-links">
 
           <li>
-            <Link smooth to="/" onClick={handleLinkClick}>Home</Link>
+            <Link  to="/" onClick={handleLinkClick}>Home</Link>
           </li>
 
           {/* ABOUT */}
@@ -60,13 +60,13 @@ const toggleMobileDropdown = (menu) => {
             <span onClick={() => toggleMenu("about")}>About ▼</span>
             {activeMenu === "about" && (
               <div className="dropdown-menu">
-                <Link smooth to="/#mission" onClick={handleLinkClick}>
+                <Link  to="/#mission" onClick={handleLinkClick}>
                   Vision & Mission
                 </Link>
-                <Link smooth to="/#objectives" onClick={handleLinkClick}>
+                <Link  to="/#objectives" onClick={handleLinkClick}>
                   Lab Objectives
                 </Link>
-                <Link smooth to="/#funding" onClick={handleLinkClick}>
+                <Link  to="/#funding" onClick={handleLinkClick}>
                   Funding & Collaboration
                 </Link>
               </div>
@@ -91,13 +91,13 @@ const toggleMobileDropdown = (menu) => {
             <span onClick={() => toggleMenu("research")}>Research ▼</span>
             {activeMenu === "research" && (
               <div className="dropdown-menu">
-                <Link smooth to="/publications#journals" onClick={handleLinkClick}>Publications - Journals</Link>
-                <Link smooth to="/publications#conferences" onClick={handleLinkClick}>Publications - Conferences</Link>
-                <Link smooth to="/publications#workshops" onClick={handleLinkClick}>Workshops</Link>
-                <Link smooth to="/projects#completed" onClick={handleLinkClick}>Completed Projects</Link>
-                <Link smooth to="/projects#ongoing" onClick={handleLinkClick}>Ongoing Projects</Link>
-                <Link smooth to="/resources" onClick={handleLinkClick}>Resources</Link>
-                <Link smooth to="/datasets" onClick={handleLinkClick}>Datasets</Link>
+                <Link  to="/publications#journals" onClick={handleLinkClick}>Publications - Journals</Link>
+                <Link  to="/publications#conferences" onClick={handleLinkClick}>Publications - Conferences</Link>
+                <Link  to="/publications#workshops" onClick={handleLinkClick}>Workshops</Link>
+                <Link  to="/projects#completed" onClick={handleLinkClick}>Completed Projects</Link>
+                <Link  to="/projects#ongoing" onClick={handleLinkClick}>Ongoing Projects</Link>
+                <Link  to="/resources" onClick={handleLinkClick}>Resources</Link>
+                <Link  to="/datasets" onClick={handleLinkClick}>Datasets</Link>
               </div>
             )}
           </li>
@@ -127,7 +127,7 @@ const toggleMobileDropdown = (menu) => {
           </li> */}
 
           <li>
-            <Link smooth to="#footer" onClick={handleLinkClick}>Contact</Link>
+            <Link  to="#footer" onClick={handleLinkClick}>Contact</Link>
           </li>
 
           <li>

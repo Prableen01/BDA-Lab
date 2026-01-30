@@ -3,6 +3,7 @@
 }
 
 html, body {
+  scroll-behavior:auto;
   background-color: green;
   margin: 0;
   padding: 0;

@@ -7,7 +7,7 @@ const facultyData = [
     role: "Professor",
     email: "sonali@iiita.ac.in",
     phone: "9415647042",
-    img: "https://profile.iiita.ac.in/sonali/static/images/sa.jpg"
+    img: "/Sonali Maam.jpg"
   }
 ];
 
