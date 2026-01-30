@@ -32,21 +32,21 @@ const MobileApplicationProject = () => {
       {/* Buttons */}
       <div className="hm-actions">
         <a
-          href="#"
+          href="https://drive.google.com/drive/folders/1qJR609tTGCfOl9kVPmqlZOryNq93A8lV?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-demo-btn"
         >
-          Live Demo
+          Demo+Setup
         </a>
 
         <a
-          href="#"
+          href="https://drive.google.com/drive/folders/1TEtJ4Na5kK-vjtLMxmBm_y0mkS7FwMRq?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-github-btn"
         >
-          GitHub
+          Code
         </a>
       </div>
     </div>
