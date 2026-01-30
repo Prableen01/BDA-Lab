@@ -5,10 +5,22 @@ import "../styles/Navbar.css";
 function Navbar() {
   const [activeMenu, setActiveMenu] = useState(null);
   const navRef = useRef(null);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const toggleMenu = (menu) => {
     setActiveMenu(activeMenu === menu ? null : menu);
   };
+
+  const toggleMobileMenu = () => {
+  setIsMobileOpen(!isMobileOpen);
+  setActiveMenu(null);
+};
+
+const [mobileDropdown, setMobileDropdown] = useState(null);
+
+const toggleMobileDropdown = (menu) => {
+  setMobileDropdown(mobileDropdown === menu ? null : menu);
+};
 
   // Close dropdown if clicked outside
   useEffect(() => {
@@ -127,6 +139,83 @@ function Navbar() {
 
       {/* RIGHT EMPTY */}
       <div className="nav-right"></div>
+      <div className="hamburger" onClick={toggleMobileMenu}>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+{isMobileOpen && (
+  <div className="mobile-menu">
+
+    <Link to="/" onClick={toggleMobileMenu}>Home</Link>
+
+    {/* ABOUT */}
+    <div className="mobile-dropdown">
+      <span onClick={() => toggleMobileDropdown("about")}>
+        About
+      </span>
+      {mobileDropdown === "about" && (
+        <div className="mobile-submenu">
+          <Link to="/#mission" onClick={toggleMobileMenu}>Vision & Mission</Link>
+          <Link to="/#objectives" onClick={toggleMobileMenu}>Lab Objectives</Link>
+          <Link to="/#funding" onClick={toggleMobileMenu}>Funding & Collaboration</Link>
+        </div>
+      )}
+    </div>
+
+    {/* PEOPLE */}
+    <div className="mobile-dropdown">
+      <span onClick={() => toggleMobileDropdown("people")}>
+        People
+      </span>
+      {mobileDropdown === "people" && (
+        <div className="mobile-submenu">
+          <Link to="/faculty" onClick={toggleMobileMenu}>Faculty</Link>
+          <Link to="/students#Phd" onClick={toggleMobileMenu}>Students – PhD</Link>
+          <Link to="/students#Mtech" onClick={toggleMobileMenu}>Students – M.Tech</Link>
+          <Link to="/students#BTech" onClick={toggleMobileMenu}>Students – B.Tech</Link>
+        </div>
+      )}
+    </div>
+
+    {/* RESEARCH */}
+    <div className="mobile-dropdown">
+      <span onClick={() => toggleMobileDropdown("research")}>
+        Research
+      </span>
+      {mobileDropdown === "research" && (
+        <div className="mobile-submenu">
+          <Link to="/publications#journals" onClick={toggleMobileMenu}>Journals</Link>
+          <Link to="/publications#conferences" onClick={toggleMobileMenu}>Conferences</Link>
+          <Link to="/publications#workshops" onClick={toggleMobileMenu}>Workshops</Link>
+          <Link to="/projects#completed" onClick={toggleMobileMenu}>Completed Projects</Link>
+          <Link to="/projects#ongoing" onClick={toggleMobileMenu}>Ongoing Projects</Link>
+          <Link to="/resources" onClick={toggleMobileMenu}>Resources</Link>
+          <Link to="/datasets" onClick={toggleMobileMenu}>Datasets</Link>
+        </div>
+      )}
+    </div>
+
+    {/* COURSES */}
+    <div className="mobile-dropdown">
+      <span onClick={() => toggleMobileDropdown("courses")}>
+        Courses
+      </span>
+      {mobileDropdown === "courses" && (
+        <div className="mobile-submenu">
+          <a href="https://profile.iiita.ac.in/sonali/courses.html">Big Data Analytics</a>
+          <a href="https://profile.iiita.ac.in/sonali/courses.html">AI & Machine Learning</a>
+          <a href="https://profile.iiita.ac.in/sonali/courses.html">Data Visualisation</a>
+          <a href="https://profile.iiita.ac.in/sonali/courses.html">Software Engineering</a>
+        </div>
+      )}
+    </div>
+
+    <Link to="#footer" onClick={toggleMobileMenu}>Contact</Link>
+    <Link to="https://bdasp.iiita.ac.in/gallery.html" onClick={toggleMobileMenu}>Gallery</Link>
+
+  </div>
+)}
     </nav>
   );
 }
