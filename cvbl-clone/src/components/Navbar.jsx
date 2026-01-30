@@ -119,7 +119,7 @@ function Navbar() {
           </li>
 
           <li>
-            <Link to="/gallery" onClick={handleLinkClick}>Gallery</Link>
+            <Link to="https://bdasp.iiita.ac.in/gallery.html" onClick={handleLinkClick}>Gallery</Link>
           </li>
 
         </ul>

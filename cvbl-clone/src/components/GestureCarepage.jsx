@@ -17,10 +17,10 @@ export default function GestureCarePage() {
           </p>
 
           <div className="gc3-hero-buttons">
-            <a href="https://your-demo-link.com" target="_blank" rel="noopener noreferrer" className="gc3-btn-primary">
-              Demo Video
+            <a href="https://drive.google.com/file/d/1hkFqySeEZwQCm5bzBhfdFMONbMqvC-iV/view?usp=sharinghttps://drive.google.com/file/d/1hkFqySeEZwQCm5bzBhfdFMONbMqvC-iV/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="gc3-btn-primary">
+              Demo Video and Setup
             </a>
-            <a href="https://github.com/your-repo-link" target="_blank" rel="noopener noreferrer" className="gc3-btn-secondary">
+            <a href="https://drive.google.com/file/d/1hkFqySeEZwQCm5bzBhfdFMONbMqvC-iV/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="gc3-btn-secondary">
               GitHub Repository
             </a>
           </div>
