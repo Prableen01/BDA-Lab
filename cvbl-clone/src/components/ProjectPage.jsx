@@ -21,7 +21,7 @@ photo: "https://profile.iiita.ac.in/sonali/static/images/sa.jpg"
 {
 name: "Prof. Navjot Singh",
 role: "Co-Project Investigator",
-cv: "",
+cv: "https://sites.google.com/iiita.ac.in/navjotsingh/home",
 photo: "https://it.iiita.ac.in/photo/navjot.jpg"
 },
 {
