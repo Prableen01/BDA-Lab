@@ -14,11 +14,11 @@ function Home() {
           </p>
 
           <div className="hero-buttons">
-            <button onClick={() => document.getElementById("mission").scrollIntoView({ behavior: "smooth" })}>
+            <button onClick={() => document.getElementById("mission").scrollIntoView({  })}>
               Mission & Vision
             </button>
 
-            <button onClick={() => document.getElementById("objectives").scrollIntoView({ behavior: "smooth" })}>
+            <button onClick={() => document.getElementById("objectives").scrollIntoView({  })}>
               Core Objectives
             </button>
           </div>
