@@ -34,21 +34,21 @@ const OntologyProject = () => {
       {/* Buttons */}
       <div className="hm-actions">
         <a
-          href="#"
+          href="https://drive.google.com/drive/folders/14tm_QYLET3aurbaOwde0xT5UP3q4gVQB?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-demo-btn"
         >
-          Live Demo
+          Demo Video
         </a>
 
         <a
-          href="#"
+          href="https://drive.google.com/drive/folders/14PDNFDaUhFuFQyxWusn5qzFT7e75ygqJ?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-github-btn"
         >
-          GitHub
+          Code
         </a>
       </div>
     </div>

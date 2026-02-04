@@ -34,21 +34,21 @@ const CloudPlatformProject = () => {
       {/* Buttons */}
       <div className="hm-actions">
         <a
-          href="#"
+          href="https://drive.google.com/file/d/1Qgr3wvgJzX0Nvu3zjJz780-N4AqSf-1h/view"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-demo-btn"
         >
-          Live Demo
+          Demo+Setup
         </a>
 
         <a
-          href="#"
+          href="https://github.com/swarupn17/TiH_IIITA_Project"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-github-btn"
         >
-          GitHub
+          Code
         </a>
       </div>
     </div>

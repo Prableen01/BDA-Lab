@@ -21,13 +21,13 @@ photo: "https://profile.iiita.ac.in/sonali/static/images/sa.jpg"
 {
 name: "Prof. Navjot Singh",
 role: "Co-Project Investigator",
-cv: "https://drive.google.com/your-cv-link-2",
+cv: "",
 photo: "https://it.iiita.ac.in/photo/navjot.jpg"
 },
 {
 name: "Sadhana Tiwari",
 role: "Post Doctoral Fellow",
-cv: "",
+cv: "https://drive.google.com/file/d/1j9WUOxntvkJ50QHYhK28wTWvUbU3fTqA/view?usp=sharing",
 photo: "/Sadhana Tiwari.jpg"
 }
 ];
