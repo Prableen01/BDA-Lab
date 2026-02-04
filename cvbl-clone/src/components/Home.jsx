@@ -1,7 +1,41 @@
 import React from "react";
 import "../styles/Home.css";
 
+
+
 function Home() {
+  const recentUpdates = [
+  {
+    title: "Received a new Project grant from ISRO under RESPOND 2024 call",
+    date: "2024–2025",
+  },
+  {
+    title:
+      "Published a research paper in DEXA 2025 entitled “Innovative Framework for Early Estimation of Mental Disorder Scores to Enable Timely Interventions”",
+    date: "DEXA 2025",
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zv8vatkAAAAJ&sortby=pubdate&citation_for_view=zv8vatkAAAAJ:4DMP91E08xMC", // replace with actual paper link
+  },
+  {
+    title:
+      "Published a research paper in DEXA 2025 entitled “Ontology-Based Forest Fire Management Using Complex Event Processing and Large Language Models”",
+    date: "DEXA 2025",
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zv8vatkAAAAJ&sortby=pubdate&citation_for_view=zv8vatkAAAAJ:aqlVkmm33-oC", // replace if available
+  },
+  {
+    title:
+      "Recently published a research paper in The Journal of Supercomputing entitled “Multiclass Classification in Medical Imaging Using Self-Supervised Learning vs Supervised Learning”",
+    date: "Journal of Supercomputing",
+    link: "https://link.springer.com/article/10.1007/s11227-025-08085-x", // replace with DOI link
+  },
+  {
+    title:
+      "Published a research paper in ICONIP 2025 entitled “Deep Semantics for Structured Data: Hybrid LLM-Based Models for Temporal Forecasting”",
+    date: "ICONIP 2025",
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hPvt6d8AAAAJ&sortby=pubdate&citation_for_view=hPvt6d8AAAAJ:R-LXmdHK_14C", // replace if available
+  },
+];
+
+
   return (
     <div className="home-container">
 
@@ -44,28 +78,23 @@ function Home() {
         </div>
 
         <div className="mission-right">
-          <h2>Recent Updates</h2>
+  <h2>Recent Updates</h2>
 
-          <div className="update-item">
-            <a>Big Data Hackathon 2026</a>
-            <span>February 18–20, 2026</span>
-          </div>
+  {recentUpdates.map((item, index) => (
+    <div className="update-item" key={index}>
+      {item.link ? (
+        <a href={item.link} target="_blank" rel="noopener noreferrer">
+          {item.title}
+        </a>
+      ) : (
+        <span>{item.title}</span>
+      )}
+      <span className="update-date">{item.date}</span>
+    </div>
+  ))}
+</div>
 
-          <div className="update-item">
-            <a>Workshop on AI and Data Engineering</a>
-            <span>January 12–13, 2026</span>
-          </div>
 
-          <div className="update-item">
-            <a>Industry Collaboration with NVIDIA and AWS</a>
-            <span>Ongoing</span>
-          </div>
-
-          <div className="update-item">
-            <a>International Conference on Data Intelligence</a>
-            <span>November 2025</span>
-          </div>
-        </div>
       </section>
 
       {/* RESEARCH FIELDS */}

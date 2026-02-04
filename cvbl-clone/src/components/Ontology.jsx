@@ -10,31 +10,19 @@ const OntologyProject = () => {
 
       {/* Brief */}
       <p className="hm-brief">
-        The Lower-Limb Disability Health and Emotion Monitoring Ontology (LLDHEMO)
-        forms the semantic foundation of the proposed health assistance system
-        by integrating biomedical, psychological, and contextual data into a
-        unified knowledge-driven framework. Built upon the Basic Formal Ontology
-        (BFO), LLDHEMO ensures logical consistency, semantic interoperability,
-        and alignment with established biomedical ontology standards.
+       
       </p>
 
       {/* Objectives */}
       <div className="hm-objectives">
         <h4>Objectives</h4>
-        <ul>
-          <li>Provide a unified semantic framework for health and emotion monitoring</li>
-          <li>Ensure interoperability using BFO-aligned biomedical standards</li>
-          <li>Extend the SSN ontology to model IoT sensors and real-time observations</li>
-          <li>Enable semantic annotation and multimodal data fusion</li>
-          <li>Support ontology-driven reasoning for abnormality detection and decision support</li>
-          <li>Facilitate seamless integration with healthcare systems and knowledge bases</li>
-        </ul>
+        
       </div>
 
       {/* Buttons */}
       <div className="hm-actions">
         <a
-          href="https://drive.google.com/drive/folders/14tm_QYLET3aurbaOwde0xT5UP3q4gVQB?usp=drive_link"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-demo-btn"
@@ -43,7 +31,7 @@ const OntologyProject = () => {
         </a>
 
         <a
-          href="https://drive.google.com/drive/folders/14PDNFDaUhFuFQyxWusn5qzFT7e75ygqJ?usp=drive_link"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-github-btn"

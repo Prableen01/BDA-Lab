@@ -26,26 +26,26 @@ export const phdStudents = [
   {
     name: "Ritesh Chandra",
     // rollNo: "RSI2022001",
-    project: "Biometric Spoof Detection",
+    project: "Worked on a CSIR Project",
     img: "/Ritesh Chandra.jpg"
   },
   {
     name: "Anvita Srivastava",
     // rollNo: "PHD2020CV05",
-    project: "CSIR Project",
-    img: "/images/phd2.jpg"
+    project: "Stream Analytics Framework for Data Driven Applications.",
+    img: "/Anvita Srivastava.jpg"
   },
   {
-    name: "Nitu Jha",
+    name: "Nitu Kumari",
     // rollNo: "PHD2020CV05",
-    project: "Biometric Spoof Detection",
-    img: "/images/phd2.jpg"
+    project: "NA",
+    img: "/Nitu Kumari.jpg"
   },
   {
-    name: "Sonam Yadavr",
+    name: "Sonam Yadav",
     // rollNo: "PHD2020CV05",
-    project: "Biometric Spoof Detection",
-    img: "/images/phd2.jpg"
+    project: "Uncertainty-aware Concept Drift Management Framework",
+    img: "/Sonam.jpg"
   },
   {
     name: "Himanshi Singh",

@@ -279,3 +279,116 @@ footer {
     flex-direction: column;
   }
 }
+
+/* ===============================
+   RECENT UPDATES
+================================ */
+
+.mission-right {
+  background: var(--white);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.mission-right h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.mission-right h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: var(--accent);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-radius: 2px;
+}
+
+/* Individual update item */
+.update-item {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.update-item:last-child {
+  border-bottom: none;
+}
+
+/* Linked titles */
+.update-item a {
+  font-weight: 500;
+  color: var(--secondary);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.update-item a:hover {
+  color: var(--primary);
+  transform: translateX(2px);
+}
+
+/* Non-linked titles */
+.update-item span:first-child {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Date / venue */
+.update-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Non-linked titles (same as links) */
+.update-item span:not(.update-date) {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+/* ===============================
+   SCROLLABLE RECENT UPDATES
+================================ */
+
+.mission-right {
+  background: var(--white);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+
+  max-height: 420px;      /* control size */
+  overflow-y: auto;
+}
+
+/* Webkit browsers */
+.mission-right::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mission-right::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mission-right::-webkit-scrollbar-thumb {
+  background-color: var(--border-light);
+  border-radius: 10px;
+}
+
+.mission-right::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary);
+}
+
+/* Firefox */
+.mission-right {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-light) transparent;
+}
+
