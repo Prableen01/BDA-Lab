@@ -37,7 +37,7 @@ function StudentCard({ student }) {
           rel="noopener noreferrer"
           className="cv-link"
         >
-          View CV
+          Homepage
         </a>
       )}
     </div>

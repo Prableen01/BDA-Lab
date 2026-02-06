@@ -7,13 +7,13 @@ export const phdStudents = [
   },
   {
     name: "Ashutosh Kumar",
-    project: "Biometric Spoof Detection",
+    project: "Catastrophic Forgetting",
     // cvLink: "https://example.com/ashutosh-kumar-cv.pdf",
     img: "/Ashutosh Sir.jpg"
   },
   {
     name: "Shashi Shekhar Kumar",
-    project: "Biometric Spoof Detection",
+    project: "Complex Event Processing",
     // cvLink: "https://example.com/shashi-shekhar-cv.pdf",
     img: "/Shashi Shekhar.jpg"
   },
