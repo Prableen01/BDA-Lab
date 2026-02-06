@@ -51,7 +51,7 @@ export const phdStudents = [
     name: "Himanshi Singh",
     project:
       "A Multimodal Analysis for Mental Disorder Recognition to Improve Mental Health and Well-Being (MODEST)",
-    // cvLink: "https://example.com/himanshi-singh-cv.pdf",
+    cvLink: "https://sites.google.com/iiita.ac.in/himanshi/welcome-to-home",
     img: "/Himanshi Singh.jpeg"
   }
 ];
