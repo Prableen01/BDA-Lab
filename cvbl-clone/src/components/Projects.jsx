@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/Projects.css";
-import { projects } from "../data/projectsData";
+import { Completedprojects } from "../data/CompletedprojectsData";
+import { Ongoingprojects } from "../data/OngoingprojectsData";
 import { Link } from "react-router-dom";
 
 /* =========================
@@ -96,14 +97,14 @@ const Projects = () => {
       <section id="ongoing">
         <h2 className="section-title">Ongoing Projects</h2>
         <hr />
-        {projects.ongoing.map(ProjectCard)}
+        {Ongoingprojects.map(ProjectCard)}
       </section>
 
       {/* COMPLETED PROJECTS */}
       <section id="completed">
         <h2 className="section-title">Completed Projects</h2>
         <hr />
-        {projects.completed.map(ProjectCard)}
+        {Completedprojects.map(ProjectCard)}
       </section>
     </div>
   );

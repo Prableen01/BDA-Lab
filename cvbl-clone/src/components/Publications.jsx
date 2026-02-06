@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/Publications.css";
-import { journals, conferences,workshops } from "../data/publications";
+import { journals } from "../data/journals";
+import { conferences } from "../data/conferences";
+import { workshops } from "../data/workshops";
 
 export default function Publications() {
   return (

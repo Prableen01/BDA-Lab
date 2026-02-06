@@ -1,35 +1,37 @@
 import React from "react";
 import "../styles/Faculty.css";
-import {
-  phdStudents,
-  mtechStudents,
-  btechStudentGroups
-} from "../data/Students";
+import { phdStudents } from "../data/phdStudents";
+import { mtechStudents } from "../data/mtechStudents";
+import { btechStudentGroups } from "../data/btechStudentsGroups";
 
 /* ===============================
    REUSABLE STUDENT CARD
 ================================ */
-function StudentCard({ student }) {
+function StudentCard({ student, showImage = true }) {
   return (
     <div className="faculty-card">
-      <img
-        src={student.img}
-        alt={student.name}
-        className="faculty-img"
-      />
+      {/* Image (optional) */}
+      {showImage && (
+        <img
+          src={student.img}
+          alt={student.name}
+          className="faculty-img"
+        />
+      )}
 
       <h3 className="faculty-name">{student.name}</h3>
 
-      {/* Roll No shown ONLY if present */}
+      {/* Roll No (optional) */}
       {student.rollNo && (
         <p className="faculty-role">Roll No: {student.rollNo}</p>
       )}
 
+      {/* Project */}
       <p className="faculty-project">
         <strong>Project:</strong> {student.project}
       </p>
 
-      {/* CV link shown ONLY if present (PhD students) */}
+      {/* CV / Homepage link (PhD only) */}
       {student.cvLink && (
         <a
           href={student.cvLink}
@@ -43,7 +45,6 @@ function StudentCard({ student }) {
     </div>
   );
 }
-
 
 /* ===============================
    STUDENTS PAGE
@@ -72,7 +73,11 @@ function Students() {
         <h2 className="section-title">M.Tech Students</h2>
         <div className="faculty-grid">
           {mtechStudents.map((student, index) => (
-            <StudentCard key={index} student={student} />
+            <StudentCard
+              key={index}
+              student={student}
+              showImage={false}
+            />
           ))}
         </div>
       </section>
@@ -80,36 +85,35 @@ function Students() {
       {/* ===============================
           B.Tech Students (Grouped)
       =============================== */}
-      {/* ===============================
-    B.Tech Students (Grouped)
-=============================== */}
-<section id="BTech">
-  <h2 className="section-title">B.Tech Students</h2>
+      <section id="BTech">
+        <h2 className="section-title">B.Tech Students</h2>
 
-  <div className="btech-grid">
-    {btechStudentGroups.map((group, index) => (
-      <div key={index} className="btech-group">
-        <h3 className="btech-group-title">{group.groupName}</h3>
+        <div className="btech-grid">
+          {btechStudentGroups.map((group, index) => (
+            <div key={index} className="btech-group">
+              <h3 className="btech-group-title">
+                {group.groupName}
+              </h3>
 
-        <p className="btech-group-info">
-          <strong>Project:</strong> {group.project}
-        </p>
+              <p className="btech-group-info">
+                <strong>Project:</strong> {group.project}
+              </p>
 
-        <p className="btech-group-info">
-          <strong>Semester:</strong> {group.semester}
-        </p>
+              <p className="btech-group-info">
+                <strong>Semester:</strong> {group.semester}
+              </p>
 
-        <ul className="btech-student-list">
-          {group.students.map((stu, i) => (
-            <li key={i}>
-              {stu.name} — {stu.rollNo} (Sem {stu.sem})
-            </li>
+              <ul className="btech-student-list">
+                {group.students.map((stu, i) => (
+                  <li key={i}>
+                    {stu.name} — {stu.rollNo} (Sem {stu.sem})
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
-      </div>
-    ))}
-  </div>
-</section>
+        </div>
+      </section>
     </div>
   );
 }

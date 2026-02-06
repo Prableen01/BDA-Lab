@@ -43,7 +43,7 @@ const CloudPlatformProject = () => {
         </a>
 
         <a
-          href="https://github.com/swarupn17/TiH_IIITA_Project"
+          href="https://github.com/BDA-IIITA/TIH_BimodalGestureRecognition"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-github-btn"

@@ -27,7 +27,7 @@ photo: "https://it.iiita.ac.in/photo/navjot.jpg"
 {
 name: "Sadhana Tiwari",
 role: "Post Doctoral Fellow",
-cv: "https://drive.google.com/file/d/1j9WUOxntvkJ50QHYhK28wTWvUbU3fTqA/view?usp=sharing",
+cv: "https://drive.google.com/file/d/1y1gk0E-qTV0TN-Xsoq2rb_wTcSiNSlyU/view?usp=drive_link",
 photo: "/Sadhana Tiwari.jpg"
 }
 ];

@@ -1,15 +1,6 @@
 import React from "react";
 import "../styles/Faculty.css";
-
-const facultyData = [
-  {
-    name: "Prof. Sonali Agarwal",
-    role: "Professor",
-    email: "sonali@iiita.ac.in",
-    phone: "9415647042",
-    img: "/Sonali Maam.jpg"
-  }
-];
+import { facultyData } from "../data/facultydata";
 
 function Faculty() {
   return (

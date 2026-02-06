@@ -20,7 +20,7 @@ export default function GestureCarePage() {
             <a href="https://drive.google.com/file/d/1hkFqySeEZwQCm5bzBhfdFMONbMqvC-iV/view?usp=sharinghttps://drive.google.com/file/d/1hkFqySeEZwQCm5bzBhfdFMONbMqvC-iV/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="gc3-btn-primary">
               Demo Video and Setup
             </a>
-            <a href="https://github.com/swarupn17/TiH_IIITA_Project" target="_blank" rel="noopener noreferrer" className="gc3-btn-secondary">
+            <a href="https://github.com/BDA-IIITA/TIH_BimodalGestureRecognition" target="_blank" rel="noopener noreferrer" className="gc3-btn-secondary">
               GitHub Repository
             </a>
           </div>

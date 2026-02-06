@@ -41,7 +41,7 @@ const MobileApplicationProject = () => {
         </a>
 
         <a
-          href="https://github.com/swarupn17/TiH_IIITA_Project"
+          href="https://github.com/BDA-IIITA/TIH_BimodalGestureRecognition_App"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-github-btn"
@@ -59,7 +59,7 @@ const MobileApplicationProject = () => {
         </a>
 
         <a
-          href="http://91.150.160.38:6054"
+          href="http://1.208.108.242:58725/"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-github-btn"
