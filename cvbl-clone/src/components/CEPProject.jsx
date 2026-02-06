@@ -40,12 +40,12 @@ const CEPProject = () => {
         </a>
 
         <a
-          href="https://drive.google.com/drive/folders/14PDNFDaUhFuFQyxWusn5qzFT7e75ygqJ?usp=drive_link"
+          href="https://github.com/BDA-IIITA/TiH-Project-2"
           target="_blank"
           rel="noopener noreferrer"
           className="hm-btn hm-github-btn"
         >
-          Code 
+          Github Repo 
         </a>
       </div>
     </div>
