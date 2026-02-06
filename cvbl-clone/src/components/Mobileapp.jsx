@@ -37,7 +37,7 @@ const MobileApplicationProject = () => {
           rel="noopener noreferrer"
           className="hm-btn hm-demo-btn"
         >
-          Demo+Setup
+          Demo Video+Setup
         </a>
 
         <a
@@ -57,6 +57,16 @@ const MobileApplicationProject = () => {
         >
           App
         </a>
+
+        <a
+          href="http://91.150.160.38:6054"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hm-btn hm-github-btn"
+        >
+          Live Demo 
+        </a>
+        
       </div>
     </div>
   );

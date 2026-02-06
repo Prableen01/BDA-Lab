@@ -28,9 +28,22 @@ function StudentCard({ student }) {
       <p className="faculty-project">
         <strong>Project:</strong> {student.project}
       </p>
+
+      {/* CV link shown ONLY if present (PhD students) */}
+      {student.cvLink && (
+        <a
+          href={student.cvLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cv-link"
+        >
+          View CV
+        </a>
+      )}
     </div>
   );
 }
+
 
 /* ===============================
    STUDENTS PAGE

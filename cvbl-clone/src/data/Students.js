@@ -1,60 +1,61 @@
 export const phdStudents = [
   {
     name: "Sadhana Tiwari",
-    // rollNo: "PHD2021CV01",
     project: "Technology in Healthcare",
+    // cvLink: "https://example.com/sadhana-tiwari-cv.pdf",
     img: "/Sadhana Tiwari.jpg"
   },
   {
     name: "Ashutosh Kumar",
-    // rollNo: "PHD2020CV05",
     project: "Biometric Spoof Detection",
+    // cvLink: "https://example.com/ashutosh-kumar-cv.pdf",
     img: "/Ashutosh Sir.jpg"
   },
   {
     name: "Shashi Shekhar Kumar",
-    // rollNo: "PHD2020CV05",
     project: "Biometric Spoof Detection",
+    // cvLink: "https://example.com/shashi-shekhar-cv.pdf",
     img: "/Shashi Shekhar.jpg"
   },
   {
     name: "Amit Tyagi",
-    // rollNo: "PHD2020CV05",
     project: "Biometric Spoof Detection",
+    // cvLink: "https://example.com/amit-tyagi-cv.pdf",
     img: "/images/phd2.jpg"
   },
   {
     name: "Ritesh Chandra",
-    // rollNo: "RSI2022001",
     project: "Worked on a CSIR Project",
+    cvLink: "https://rsi2022001.github.io/Portfolio/",
     img: "/Ritesh Chandra.jpg"
   },
   {
     name: "Anvita Srivastava",
-    // rollNo: "PHD2020CV05",
     project: "Stream Analytics Framework for Data Driven Applications.",
+    // cvLink: "",
     img: "/Anvita Srivastava.jpg"
   },
   {
     name: "Nitu Kumari",
-    // rollNo: "PHD2020CV05",
     project: "NA",
+    // cvLink: "https://example.com/nitu-kumari-cv.pdf",
     img: "/Nitu Kumari.jpg"
   },
   {
     name: "Sonam Yadav",
-    // rollNo: "PHD2020CV05",
     project: "Uncertainty-aware Concept Drift Management Framework",
+    // cvLink: "https://example.com/sonam-yadav-cv.pdf",
     img: "/Sonam.jpg"
   },
   {
     name: "Himanshi Singh",
-    // rollNo: "PHD2020CV05",
-    project: "A Multimodal Analysis for Mental Disorder Recognition to Improve Mental Health and Well-Being (MODEST)",
+    project:
+      "A Multimodal Analysis for Mental Disorder Recognition to Improve Mental Health and Well-Being (MODEST)",
+    // cvLink: "https://example.com/himanshi-singh-cv.pdf",
     img: "/Himanshi Singh.jpeg"
   }
-
 ];
+
 
 export const mtechStudents = [
   {
